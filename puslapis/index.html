@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Danielius M Glorious Website</title>
+    <meta name="author" content="Dan">
+    <meta name="description" content="Portfolio">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+
+</head>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="java.js"></script>
+<script>
+    $('document').ready(function () {
+
+        hamburger;
+
+    });
+
+    function hamburger() {
+        var Closed = false;
+        $('#hamburger').click(function () {
+            if (Closed == true) {
+                $(this).removeClass('open');
+                $(this).addClass('closed');
+                Closed = false;
+            } else {
+                $(this).removeClass('closed');
+                $(this).addClass('open');
+                Closed = true;
+            }
+        });
+    }
+</script>
+
+<div class="mobile-nav moving-gradient">
+    <!-- hamburger menu-->
+    <div id="hamburger" class="moving-gradient hamburger closed">
+        <div class="burger-main">
+            <div class="burger-inner">
+                <span class="top"></span>
+                <span class="mid"></span>
+                <span class="bot"></span>
+            </div>
+        </div>
+
+        <div class="svg-main">
+            <svg class="svg-circle">
+                <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4" d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2"
+                />
+            </svg>
+        </div>
+        <div class="path-burger">
+            <div class="animate-path">
+                <div class="path-rotation"></div>
+            </div>
+        </div>
+    </div>
+    <!--/hamburger menu-->
+    <!-- slideout-->
+    <div id="slideout" class='slideout'>
+        <div class="slideout-canvas">
+            
+        </div>
+        <div>logo</div>
+        <ul>
+            <li>
+                Home
+            </li>
+        </ul>
+
+    </div>
+    <!--/slideout-->
+</div>
+
+
+<div> </div>
+
+<body>
+
+
+
+
+</body>
+
+</html>
