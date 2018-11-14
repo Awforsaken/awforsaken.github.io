@@ -45,6 +45,7 @@
   -ms-user-select: none;
   user-select: none;
   overflow:hidden;
+  z-index:4;
 }
 
 .burger-main {
@@ -432,6 +433,7 @@
     width:80%;
     height: 100vh;
     position:fixed;
+    z-index:2;
 }
 .slideout.closed{
 right:-80%;

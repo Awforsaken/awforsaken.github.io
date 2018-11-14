@@ -19,24 +19,27 @@
     });
 
     function hamburger() {
-        var Closed = false;
-        //var slideout = $('#slideout');
-        $('#hamburger').click(function () {
-            console.log('btn pressed');
-            if (Closed == true) {
-                $(this).removeClass('open').addClass('closed');
-                $('#slideout').removeClass('open');
-                $('#slideout').addClass('closed');
-                Closed = false;
 
-            } else {
-                $(this).removeClass('closed').addClass('open');
-                $('#slideout').removeClass('closed');
-                $('#slideout').addClass('open');
-                Closed = true;
+        $('#hamburger').click(function () {
+            let b = $(this);
+            let slide = $('#slideout');
+            console.log(b);
+            if (b.hasClass('closed')) {
+                b.addClass('closed');
+                slide.addClass('closed');
+                b.removeClass('open');
+                slide.removeClass('open');
+                console.log(b);
+            }
+            else {
+                b.removeClass('closed');
+                slide.removeClass('closed');
+                b.addClass('open');
+                slide.addClass('open');
+                console.log(b);
             }
         });
-    }
+      }
 </script>
 
 <div class="mobile-nav moving-gradient">
@@ -64,8 +67,8 @@
     </div>
     <!--/hamburger menu-->
     <!-- slideout-->
-    <div id="slideout" class='slideout closed'>
-        <div class="slideout-canvas moving-gradient">
+    <div id="slideout" class='slideout closed moving-gradient'>
+        <div class="slideout-canvas ">
             <nav>
                 <ul>
                     <li>Home</li>
