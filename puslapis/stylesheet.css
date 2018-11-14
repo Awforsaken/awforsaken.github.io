@@ -2,10 +2,12 @@
     --red: #b00;
     --blue: #00b;
     --fullwidth: 100%;
-    --accent:;
+    --accent:#000;
   }
  
-  
+  body{
+      width:100%;
+  }
   h1 {
     color: var(--red);
   }
