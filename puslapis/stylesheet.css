@@ -438,6 +438,7 @@
     position:fixed;
     z-index:2;
     transition: 0.2s ease-in-out;
+    top:0;
 }
 .slideout.closed{
 right:-80%;
@@ -452,6 +453,7 @@ right:-80%;
 .slideout-canvas{
     position:absolute;
     right:0;
+    width:100%;
   }
   .slideout-canvas svg{
     height:100vh;
