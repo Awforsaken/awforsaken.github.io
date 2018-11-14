@@ -15,21 +15,24 @@
 <script type="text/javascript" src="java.js"></script>
 <script>
     $('document').ready(function () {
-
-        hamburger;
-
+        hamburger();
     });
 
     function hamburger() {
         var Closed = false;
+        //var slideout = $('#slideout');
         $('#hamburger').click(function () {
+            console.log('btn pressed');
             if (Closed == true) {
-                $(this).removeClass('open');
-                $(this).addClass('closed');
+                $(this).removeClass('open').addClass('closed');
+                $('#slideout').removeClass('open');
+                $('#slideout').addClass('closed');
                 Closed = false;
+
             } else {
-                $(this).removeClass('closed');
-                $(this).addClass('open');
+                $(this).removeClass('closed').addClass('open');
+                $('#slideout').removeClass('closed');
+                $('#slideout').addClass('open');
                 Closed = true;
             }
         });
@@ -61,22 +64,35 @@
     </div>
     <!--/hamburger menu-->
     <!-- slideout-->
-    <div id="slideout" class='slideout'>
-        <div class="slideout-canvas">
-            
+    <div id="slideout" class='slideout closed'>
+        <div class="slideout-canvas moving-gradient">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>experience</li>
+                </ul>
+            </nav>
+            <!-- veliau pasizaist 
+            <svg viewBox="0 0 100 100">
+                <polygon points="50,100 40,60, 50,0 100,0 100,100" style="fill:blue">
+                    <animate begin="shape.click" id="animation-1" begin="indefinite" fill="freeze" attributeName="points" dur="200ms"
+                        to="50,100 100,60, 50,0 100,0 100,100" />
+                    <animate begin="shape.click" id="animation-close" begin="indefinite" fill="freeze" attributeName="points" dur="200ms"
+                        to="50,100 40,60, 50,0 100,0 100,100" />
+                </polygon>
+            </svg>
+            -->
         </div>
-        <div>logo</div>
-        <ul>
-            <li>
-                Home
-            </li>
-        </ul>
-
     </div>
     <!--/slideout-->
+
+
+
 </div>
 
-
+    <!-- content-->
+    <div>hi</div>
+    <!--/ content-->
 <div> </div>
 
 <body>

@@ -429,12 +429,37 @@
 /* /burger animations */
 /*  slideout*/
 .slideout{
-    height:100%;
-
+    width:80%;
+    height: 100vh;
+    position:fixed;
 }
 .slideout.closed{
+right:-80%;
 
 }
+
+.slideout.open{
+    right:0;
+}
+.slideout-canvas{
+    position:absolute;
+    right:0;
+  }
+  .slideout-canvas svg{
+    height:100vh;
+  }
+  .slideout-canvas nav{
+    position:absolute;
+    right:0;
+    text-align:center;
+    padding:20px;
+  }
+  
+  ul{
+     list-style:none;
+  }
+  
+   
 /* /slideout*/
 
 
