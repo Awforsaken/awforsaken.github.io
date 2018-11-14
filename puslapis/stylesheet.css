@@ -3,10 +3,12 @@
     --blue: #00b;
     --fullwidth: 100%;
     --accent:#000;
+    --menu-colour:#f1f1f1;
   }
  
   body{
       width:100%;
+      font-family: 'Montserrat', sans-serif;
   }
   h1 {
     color: var(--red);
@@ -25,6 +27,7 @@
     }
 } 
 /* /breakpoints */
+
 /*  burger menu */
 
 *,
@@ -196,86 +199,47 @@
 /* /burger menu */
 /*  burger animations */
 @-webkit-keyframes dash-in {
-  0% {
-    stroke-dashoffset: 240;
-  }
-
-  40% {
-    stroke-dashoffset: 240;
-  }
-
-  100% {
-    stroke-dashoffset: 0;
-  }
-
+  0% {stroke-dashoffset: 240;}
+  40% {stroke-dashoffset: 240;}
+  100% {stroke-dashoffset: 0;}
 }
 
 @keyframes dash-in {
-  0% {
-    stroke-dashoffset: 240;
-  }
-
-  40% {
-    stroke-dashoffset: 240;
-  }
-
-  100% {
-    stroke-dashoffset: 0;
-  }
-
+  0% {stroke-dashoffset: 240;}
+  40% {stroke-dashoffset: 240;}
+  100% {stroke-dashoffset: 0;}
 }
 
 @-webkit-keyframes dash-out {
-  0% {
-    stroke-dashoffset: 0;
-  }
-
-  40% {
-    stroke-dashoffset: 240;
-  }
-
-  100% {
-    stroke-dashoffset: 240;
-  }
-
+  0% {stroke-dashoffset: 0;}
+  40% {stroke-dashoffset: 240;}
+  100% {stroke-dashoffset: 240;}
 }
 
 @keyframes dash-out {
-  0% {
-    stroke-dashoffset: 0;
-  }
-
-  40% {
-    stroke-dashoffset: 240;
-  }
-
-  100% {
-    stroke-dashoffset: 240;
-  }
+  0% {stroke-dashoffset: 0;}
+  40% {stroke-dashoffset: 240;}
+  100% {stroke-dashoffset: 240;}
 
 }
 
 @keyframes close-top-out {
-  0% {
-    left: 0;
+  0% {left: 0;
     top: 0;
     transform: rotate(0deg);
   }
 
-  20% {
-    left: 0;
+  20% {left: 0;
     top: 0;
     transform: rotate(15deg);
   }
 
-  80% {
-    left: -5px;
+  80% {left: -5px;
     top: 0;
     transform: rotate(-60deg);
   }
 
-  100% {
-    left: -5px;
+  100% {left: -5px;
     top: 1px;
     transform: rotate(-45deg);
   }
@@ -283,49 +247,41 @@
 }
 
 @keyframes close-bot-out {
-  0% {
-    left: 0;
+  0% {left: 0;
     transform: rotate(0deg);
-  }
+   }
 
-  20% {
-    left: 0;
+  20% {left: 0;
     transform: rotate(-15deg);
   }
 
-  80% {
-    left: -5px;
+  80% {left: -5px;
     transform: rotate(60deg);
   }
 
-  100% {
-    left: -5px;
+  100% {left: -5px;
     transform: rotate(45deg);
   }
 
 }
 
 @keyframes close-top-in {
-  0% {
-    left: -5px;
+  0% {left: -5px;
     bot: 0;
     transform: rotate(-45deg);
   }
 
-  20% {
-    left: -5px;
+  20% {left: -5px;
     bot: 0;
     transform: rotate(-60deg);
   }
 
-  80% {
-    left: 0;
+  80% {left: 0;
     bot: 0;
     transform: rotate(15deg);
   }
 
-  100% {
-    left: 0;
+  100% {left: 0;
     bot: 1px;
     transform: rotate(0deg);
   }
@@ -461,12 +417,17 @@ right:-80%;
   .slideout-canvas nav{
     position:absolute;
     right:0;
-    text-align:center;
+    text-align:left;
     padding:20px;
+    width:100%;
   }
   
-  ul{
-     list-style:none;
+  .slideout-canvas ul{
+    padding-left: 10vw;
+    list-style:none;
+    font-size:8vw;
+    font-weight: 900;
+    color:var(--menu-colour);
   }
   
    
