@@ -24,7 +24,7 @@
 /*  breakpoints 600px, 900px, 1200px, and 1800px*/
 /*tablet  @media only screen and (min-width: 1200px){*/
 
-@media (min-width: 1200px){
+@media only screen and (min-width: 1200px){
     .mobile-nav{
         display:none;
     }
@@ -461,25 +461,29 @@ right:-80%;
   /*display:none;*/
   /*height: 70px;*/
 }
-.desktop-nav ul{
-  display:inline-block;
+.desktop-nav ul.desktop-list{
+  /*display:inline-block;*/
   list-style: none;
+  float:right; 
+  margin:0;
 }
 .desktop.logo{
   padding:10px;
 }
 .desktop-nav .logo{
-  max-width:200px;
+  max-width:120px;
   display:inline-block;
 }
 .desktop-nav .desktop-list li{
   float:left;
   padding:20px;
 }
+
 /* /desktop nav*/
 /*  desktop general*/
 .container{
   max-width: 1200px;
+  margin:auto;
 }
 /* /desktop general*/
 /*  gradients */
