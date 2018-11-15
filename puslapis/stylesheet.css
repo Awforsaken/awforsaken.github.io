@@ -454,20 +454,36 @@ right:-80%;
     
   }
   
-   
+
 /* /slideout*/
 /*  desktop nav*/
 .desktop-nav{
-  display:none;
+  /*display:none;*/
+  /*height: 70px;*/
+}
+.desktop-nav ul{
+  display:inline-block;
+  list-style: none;
+}
+.desktop.logo{
+  padding:10px;
 }
 .desktop-nav .logo{
-  width:200px;
+  max-width:200px;
   display:inline-block;
 }
+.desktop-nav .desktop-list li{
+  float:left;
+  padding:20px;
+}
 /* /desktop nav*/
-
+/*  desktop general*/
+.container{
+  max-width: 1200px;
+}
+/* /desktop general*/
 /*  gradients */
-.moving-gradient{background: linear-gradient(270deg, #c30a28, #1e9b41, #2d4196 );
+.moving-gradient{background: linear-gradient(270deg, #c30a28, #C850C0, #2d4196 );
     background-size: 1000% 1000%;
     
     -webkit-animation: AnimationName 300s ease infinite;
