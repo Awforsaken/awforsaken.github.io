@@ -6,11 +6,12 @@
     --menu-colour:#f1f1f1;
   }
  
-
+ 
   body{
       width:100%;
       font-family: 'Montserrat', sans-serif;
       background-color:var(--menu-colour);
+      margin:0;
   }
   h1 {
     color: var(--red);
