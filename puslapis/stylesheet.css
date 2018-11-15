@@ -402,6 +402,7 @@
 .mobile-list{
   display: flex; 
   flex-direction: column;
+  margin-top: 20vh;
 }
 .slideout{
     width:80%;
