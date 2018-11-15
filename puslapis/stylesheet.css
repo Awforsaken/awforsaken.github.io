@@ -6,9 +6,6 @@
     --menu-colour:#f1f1f1;
   }
  
-  .logo{
-    width:100%;
-  }
 
   body{
       width:100%;
@@ -393,6 +390,18 @@
 }
 /* /burger animations */
 /*  slideout*/
+
+
+.logo{
+  width:50%;
+}
+.logosvg{
+  fill:var(--menu-colour);
+}
+.mobile-list{
+  display: flex; 
+  flex-direction: column;
+}
 .slideout{
     width:80%;
     height: 100vh;
