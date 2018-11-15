@@ -28,6 +28,9 @@
     .mobile-nav{
         display:none;
     }
+    .desktop-nav{
+      display:block;
+    }
 } 
 /* /breakpoints */
 
@@ -453,15 +456,23 @@ right:-80%;
   
    
 /* /slideout*/
-
+/*  desktop nav*/
+.desktop-nav{
+  display:none;
+}
+.desktop-nav .logo{
+  width:200px;
+  display:inline-block;
+}
+/* /desktop nav*/
 
 /*  gradients */
-.moving-gradient{background: linear-gradient(270deg, #1e9b41, #a5d22d, #2d4196, #c30a28);
+.moving-gradient{background: linear-gradient(270deg, #c30a28, #1e9b41, #2d4196 );
     background-size: 1000% 1000%;
     
-    -webkit-animation: AnimationName 90s ease infinite;
-    -moz-animation: AnimationName 90s ease infinite;
-    animation: AnimationName 90s ease infinite;}
+    -webkit-animation: AnimationName 300s ease infinite;
+    -moz-animation: AnimationName 300s ease infinite;
+    animation: AnimationName 300s ease infinite;}
   
   
   @-webkit-keyframes AnimationName {
