@@ -443,8 +443,12 @@ right:-80%;
     list-style:none;
     font-size:8vw;
     font-weight: 900;
-    color:var(--menu-colour);
     line-height: 2em;
+  }
+
+  .slideout-canvas ul a{
+    color:var(--menu-colour);
+    
   }
   
    
@@ -452,12 +456,12 @@ right:-80%;
 
 
 /*  gradients */
-.moving-gradient{background: linear-gradient(270deg, #6c3e9c, #314abc);
-    background-size: 400% 400%;
+.moving-gradient{background: linear-gradient(270deg, #1e9b41, #a5d22d, #2d4196, #c30a28);
+    background-size: 1000% 1000%;
     
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;}
+    -webkit-animation: AnimationName 90s ease infinite;
+    -moz-animation: AnimationName 90s ease infinite;
+    animation: AnimationName 90s ease infinite;}
   
   
   @-webkit-keyframes AnimationName {
