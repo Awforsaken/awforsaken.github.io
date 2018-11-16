@@ -438,7 +438,7 @@ right:-80%;
     line-height: 2em;
   }
 
-  .slideout-canvas ul a{
+  .slideout-canvas ul a, .desktop-nav a{
     color:var(--menu-colour);
     
   }
@@ -455,6 +455,8 @@ right:-80%;
   list-style: none;
   float:right; 
   margin:0;
+  color:var(--menu-colour);
+  font-size: 20px;
 }
 .desktop.logo{
   padding:10px;
@@ -465,9 +467,11 @@ right:-80%;
 }
 .desktop-nav .desktop-list li{
   float:left;
-  padding:20px;
+  padding:18px;
 }
-
+.desktop-nav .desktop-list li.social{
+  padding:18px 10px;
+}
 /* /desktop nav*/
 /*  desktop general*/
 .container{
@@ -475,8 +479,9 @@ right:-80%;
   margin:auto;
 }
 /* /desktop general*/
+
 /*  gradients */
-.moving-gradient{background: linear-gradient(270deg, #c30a28, #C850C0, #2d4196 );
+.moving-gradient{background: linear-gradient(270deg, #2d4196, #a03673, #784BA0 );
     background-size: 1000% 1000%;
     
     -webkit-animation: AnimationName 300s ease infinite;
@@ -502,7 +507,12 @@ right:-80%;
 /* /gradients */
 
 /*  breakpoints 600px, 900px, 1200px, and 1800px*/
-/*tablet  @media only screen and (min-width: 1200px){*/
+/*tablet  @media only screen and (min-width: 1200px){
+@media only screen and (min-width: 600px){
+  .slideout-canvas ul{
+    font-size:28px;
+  }
+} */
 
   @media only screen and (min-width: 1200px){
     .mobile-nav{
