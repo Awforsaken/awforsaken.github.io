@@ -410,7 +410,6 @@ right:-80%;
 .mobile-nav{
     position: fixed;
 }
-
 .slideout.open{
     right:0;
 }
@@ -429,7 +428,6 @@ right:-80%;
     padding:20px;
     width:100%;
   }
-  
   .slideout-canvas ul{
     padding-left: 10vw;
     list-style:none;
@@ -437,13 +435,21 @@ right:-80%;
     font-weight: 900;
     line-height: 2em;
   }
-
   .slideout-canvas ul a, .desktop-nav a{
     color:var(--menu-colour);
-    
   }
-  
 
+  .mobile-nav li.social{
+    margin-top: 10%;
+  }
+  li.social a{
+   text-decoration:none;
+  }
+  .slideout-canvas ul li.social svg{
+    width:30px;
+    height: 30px;
+    margin-right: 10%;
+  }
 /* /slideout*/
 /*  desktop nav*/
 .desktop-nav{
@@ -481,7 +487,7 @@ right:-80%;
 /* /desktop general*/
 
 /*  gradients */
-.moving-gradient{background: linear-gradient(270deg, #2d4196, #a03673, #784BA0 );
+.moving-gradient{background: linear-gradient(270deg, #2d4196, #7e355f, rgb(110, 69, 146) );
     background-size: 1000% 1000%;
     
     -webkit-animation: AnimationName 300s ease infinite;
