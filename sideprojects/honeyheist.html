@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>PAGE TITLE</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link href="css/normalize.css" rel="stylesheet" media="all">
+    <link href="css/styles.css" rel="stylesheet" media="all">
+    <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Dosis:700);
+
+#criminal, #bear{
+  text-align:center;
+  margin:auto; 
+  width:80%;
+  color:#fff;
+}
+.hidden{
+  display:none !important;
+}
+
+body {
+  font-family: "Dosis", Helvetica, Arial, sans-serif; 
+  background-color:#59558B;
+  -webkit-transition: 1s; /* Safari */
+    transition: 1s;
+  letter-spacing:1px;
+}
+
+.qtybtn{
+ width:40%;
+ line-height: 2em;
+  display:inline-block;
+} 
+.qtybtn.qtyminus, .qtybtn.qtyplus{
+  width:100%;
+}
+.cell{
+  display:block;
+  margin-bottom:40px;
+}
+.cell.tags{
+  margin-top:-8vh;
+}
+.cell.slider{
+  height:5vh;
+  margin-top:15vh;
+}
+#myform {
+    text-align: center;
+    padding: 5px;
+    margin: 2%;
+}
+.tag{
+  text-align:center;
+  width:40vmin;
+  color:white;
+  display:inline-block;
+}
+.qty {
+    width: 40vmin;
+   
+    text-align: center;
+    font-size:15em;
+  border:none;
+}
+
+input[type="range"] {
+  display: block;
+  -webkit-appearance: none;
+  background-color: #bdc3c7;
+  width: 80%;
+  height: 5px;
+  border-radius: 5px;
+  margin: 0 auto;
+  outline: 0;
+  transition:1s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #e74c3c;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+input[type=button]{
+  background-color:transparent;
+  color:white;
+ font-family: "Dosis", Helvetica, Arial, sans-serif; 
+   font-size:30px;
+}
+
+
+input[type=text]{
+  background-color:transparent;
+  color:white;
+   font-family: "Dosis", Helvetica, Arial, sans-serif; 
+}
+ 
+.svg{
+  width:100%;
+}
+
+.slider{
+  display:none;
+}
+</style>
+
+<body>
+    <form id='myform' method='POST' action='#'>
+
+        <div class="cell">
+
+            <input id="valuefield" type='text' name='quantity' value='3' class='qty' disabled />
+            <input id="valuefield2" type='text' min="0" max="6" name='quantity' value='3' class='qty' disabled />
+
+        </div>
+        <div class="cell tags">
+            <div class="tag">criminal</div>
+            <div class="tag">bear</div>
+        </div>
+        <div class="cell slider">
+            <input id="slider" type="range" min="0" max="6" value="3" step="1" />
+        </div>
+        <div class="cell">
+            <div class="qtybtn">
+                <label>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <g class="" transform="translate(0,0)" style="touch-action: none;">
+                            <path d="M257.375 32.03C139.957 87.197 42.343 247.886 17.5 367.75c71.742 0 124.22 22.845 162.094 63.03l10.47-11.436c-28.06-28.873-64.935-52.446-113.564-75.906 26.142-65.033 66.028-163.458 116.72-169.188 19.835-2.243 41.05 9.735 64.155 43.438 72.33-120.27 141.014 38.54 180.875 125.75-47.687 25.854-84.5 49.463-112.97 78.718l9.25 10.406c37.335-39.758 89.657-64.812 162.72-64.812C467.784 249.384 377.24 90.37 257.375 32.03zm-79.72 243.314c-15.3-.083-26.405 6.436-26.405 16.656 0 12.58 16.834 26.038 37.594 30.063 20.76 4.024 37.594-2.92 37.594-15.5s-16.835-26.038-37.594-30.063c-3.893-.755-7.657-1.137-11.188-1.156zm156.345 0c-3.53.02-7.295.4-11.188 1.156-20.76 4.025-37.593 17.483-37.593 30.063 0 12.58 16.833 19.524 37.592 15.5 20.76-4.025 37.594-17.484 37.594-30.063 0-10.22-11.105-16.74-26.406-16.656z"
+                                fill="#fff" fill-opacity="1"></path>
+                        </g>
+                    </svg>
+                    <input type='button' value='+ criminal' class='qtybtn qtyplus' field='quantity'></input>
+                </label>
+            </div>
+            <div class="qtybtn">
+                <label>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="">
+                        <g class="" transform="translate(0,0)" style="touch-action: none;">
+                            <path d="M238.431 80.77c-35.155.246-72.04 8.661-108.484 27.94C-29.95 201.198 34.429 334.93 46.134 370.206c20.81 24.447 48.8 32.745 74.469 46.26l-.98-20.2 18.72 6.91-1.414-14.996 21.487-.039-33.25-37.34c9.816-13.393 12.76-41.423 15.21-56.044l59.329 12.877 56.068-6.44c3.142 30.472 7.892 60.945 20.21 91.416l69.76 38.625-3.724-19.205 23.729 4.156-2.356-16.88 23.426 1.029-45.639-41.844.467-41.772c14.428-15.907 44.975-17 52.157-12.23-1.956 16.792 3.749 24.053 9.314 39.195 7.123 19.382 23.098 32.587 37.812 46.35l2.076-18.77 22.463 4.166-1.4-16.394 24.455 2.674-24.123-37.34c.486-20.817.546-41.634-2.256-62.451-3.414 5.69-8.437 10.6-13.912 14.625-10.461 7.69-23.42 12.82-36.252 12.326-8.843-.341-42.722 3.68-60.857-22.658l14.826-10.21c11.768 17.092 33.138 14.358 46.724 14.882 7.047.271 17.368-3.307 24.897-8.842 7.529-5.536 11.346-12.392 11.064-16.223l-.33-4.476 3.377-2.957s3.945-3.469 7.889-8.206c3.944-4.736 6.94-11.006 6.969-12.492.011-.588-1.189-3.557-3.434-8.07s-5.342-12.089-1.871-19.95c2.355-5.333 5.118-8.272 6.578-10.831 1.413-2.477 2.416-5.004 2.535-10.856-.417-4.153-1.148-5.244-2.795-6.623-1.722-1.441-5.616-3.179-11.742-5.123-3.19-1.013-3.497-.562-6.055 1.506-2.557 2.068-5.59 6.183-10.037 10.187l-3.222 2.903-4.278-.713c-20.726-3.451-41.094-1.951-60.205 5.607l-3.582 1.416-3.496-1.61c-12.335-5.685-21.75-10.818-27.205-11.981-2.728-.582-4.082-.43-5.498.191-1.416.62-3.404 2.09-5.975 5.928-3.113 4.649-4.81 12.102-3.736 18.468 1.074 6.367 4.067 11.36 10.791 14.297l-7.205 16.494c-12.43-5.429-19.456-16.646-21.336-27.798-1.88-11.152.537-22.527 6.531-31.477 3.815-5.696 8.286-10.025 13.71-12.4 5.423-2.376 11.29-2.414 16.472-1.309 9.322 1.987 17.862 6.877 27.783 11.674 12.084-4.308 24.541-6.575 37.098-7.066-38.725-39.944-98.414-69.255-164.537-69.78-1.13-.009-2.263-.01-3.397-.002zm188.48 101.973c6.752 0 12.225 6.629 12.225 14.807 0 8.177-5.473 14.807-12.224 14.806-6.751 0-12.223-6.63-12.223-14.806 0-8.177 5.472-14.806 12.223-14.807zm-48.732 5.148c6.75.001 12.223 6.63 12.223 14.807s-5.472 14.806-12.223 14.807c-6.751 0-12.224-6.63-12.224-14.807 0-8.178 5.473-14.807 12.224-14.807zm31.096 40.985c8.973-.167 16.408 3.757 16.607 8.765.12 3.058-2.53 5.961-7.047 7.721l.497 15.873-17.99.565-.507-16.176c-4.535-1.603-7.325-4.367-7.447-7.377-.199-5.008 6.914-9.204 15.887-9.371zm-259.828 86.062l7.365 37.684 38.545 25.539-2.422-14.9 17.178 2.609-5.457-11.967 18.656.97-20.46-19.366-1.395-6.926z"
+                                fill="#fff" fill-opacity="1"></path>
+                        </g>
+                    </svg>
+
+                    <input type='button' value='+ bear' class='qtybtn qtyminus' field='quantity' />
+                </label>
+            </div>
+        </div>
+    </form>
+    <div id='criminal' class="hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 512px; width: 512px;">
+            <g class="" transform="translate(0,0)" style="touch-action: none;">
+                <path d="M70.533 100.452c-22.862 27.542-36.27 64.923-37.766 96.702-.9 19.145 9.6 42.616 25.276 61.47 15.674 18.855 36.465 32.678 51.753 35.028 11.256.74 19.522-9.182 25.182-16.5 9.537-12.442 19.204-30.678 29.36-49.014 10.155-18.336 20.77-36.82 33.798-50.467 13.028-13.645 30.24-22.73 49.442-17.89 3.34 1.09 3.565 1.663 12.38 8.788 12.605 10.736 26.244 21.81 41.694 39.33l3.803 3.486 10.238-6.06c-20.92-23.726-38.623-51.403-57.006-76.168-27.153-36.58-54.84-65.76-94.205-69.893-36.138-3.317-74.585 18.428-93.95 41.19zm266.053-2.414c-3.507.063-7.26.632-11.217 1.733-7.08 1.97-14.577 5.722-21.718 11.09l60.545 12.47c-.844-8.415-4.142-15.068-9.524-19.503-4.425-3.646-10.055-5.63-16.6-5.785-.49-.01-.987-.013-1.487-.004zm12.787 33.34l-6.83 15.805 18.148 9.95zm-51.254 21.785c9.177 12.81 18.397 25.33 28.04 36.72 7.273-4.386 14.418-10.424 20.662-18a86.045 86.045 0 0 0 2.713-3.49zm-62.702 23.266c-8.527.283-15.98 4.993-24.262 13.67-29.706 32.65-56.175 92.534-24.877 134.35 11.81 14.805 71.805 33.64 129.122 34.264 38.29 26.563 62.975 62.86 93.86 94.36 18.564-26.89 34.903-54.124 70.025-78.467L459.423 361.2c-26.72 8.057-36.142 26.154-50.656 41.217-18.296-25.715-41.06-49.166-65.555-69.527-17.72-14.73-38.605-25.1-58.11-37.434 2.437-.69-6.538-19.77-7.556-21.99-29.352-7.035-49.364-22.817-62.138-39.367l14.25-11c13.5 17.492 35.288 33.754 73.69 35.933 19.65-2.818 29.578-6.955 35.335-11.704 5.626-4.64 8.615-10.964 12.895-20.618 1.095-6.312-.25-7.85-2.84-10.1-1.95-1.696-5.246-3.2-8.787-4.732l-39.023 23.104-4.886-6.094c-17.46-21.77-31.722-33.02-46.578-45.623-3.633-3.94-7.452-6.648-12.324-6.836a25 25 0 0 0-1.72 0zM109.8 312.53c-20.436 15.367-42.69 27.405-71.017 28.307l2.978 27.315 58.107-18.873c19.65 23.613 32.977 51.093 65.314 68.364 37.673-12.64 57.61-32.233 77.46-50.98-21.403-6.467-42.72-14.485-61.496-24.495l-14.232 34.423z"
+                    fill="#fff" fill-opacity="1"></path>
+            </g>
+        </svg>
+        <h2>You become the monstrous lord of crime and betray your companions and eventually get captured by police</h2>
+    </div>
+
+    <div id='bear' class="hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 512px; width: 512px;">
+            <g class="" transform="translate(0,0)" style="touch-action: none;">
+                <path d="M64.264 44.704c-88.765 25.213-39.73 158.676-2.108 161.887-8.506 42.218-13.32 84.645-12.642 127.824.355 22.67 51.374 58.424 105.35 86.035C186.48 466.787 238.98 466.876 256 467.296c17.02-.42 69.52-.51 101.137-46.846 53.975-27.61 104.994-63.364 105.35-86.035.677-43.179-4.137-85.606-12.643-127.824 37.623-3.211 86.657-136.674-2.108-161.887-28.433 1.462-55.606 16.152-82.172 37.223C317.64 62.233 293.164 61.296 256 61.296c-37.163 0-61.639.937-109.564 20.63-26.566-21.07-53.739-35.76-82.172-37.222zm4.927 49.928c6.057-.096 17.237 5.625 26.809 14.664 3.362 3.175-22.916 51.05-26.818 50.158-4.59-1.05-14.985-48.285-3.725-63.318.745-.994 2.039-1.477 3.734-1.504zm373.618 0c1.695.027 2.99.51 3.734 1.504 11.26 15.033.865 62.268-3.725 63.318-3.902.893-30.18-46.983-26.818-50.158 9.572-9.04 20.752-14.76 26.809-14.664zm-260.85 82.088c17.457-.304 30.686 24.445 42.041 44.576-53.57 15.878-82.575-17.11-57.752-37.777 5.603-4.665 10.823-6.714 15.711-6.8zm148.082 0c4.888.085 10.108 2.134 15.711 6.799 24.823 20.667-4.181 53.655-57.752 37.777 11.355-20.13 24.584-44.88 42.041-44.576zM256 251.548c17.32.223 36.826 9.567 30.197 36.517-1.444 5.872-12.516 8.617-21.197 9.7v8.972c99.884 41.126 79.565 138.559-9 138.559s-108.884-97.433-9-138.559v-8.972c-8.68-1.083-19.753-3.828-21.197-9.7-6.629-26.95 12.877-36.294 30.197-36.517z"
+                    fill="#fff" fill-opacity="1"></path>
+            </g>
+        </svg>
+        <h2>You flip out bear style and lose it. You have lost your hat and start running around mauling everything and everyone untill you are eventually picked up by animal control</h2>
+    </div>
+
+</body>
+
+<script>
+    jQuery(document).ready(function () {
+    // This button will increment the value
+
+  
+    var input2 = document.getElementById("valuefield2");
+    $('.qtyplus').click(function (e) {
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('field');
+        // Get its current value
+        var currentVal = parseInt($('input[name=' + fieldName + ']').val()) + 1;
+        // If is not undefined
+        if (!isNaN(currentVal) && currentVal < 6) {
+            // Increment
+            $('input[name=' + fieldName + ']').val(currentVal);
+
+        } else {
+            // Otherwise put a 3 there
+            $('input[name=' + fieldName + ']').val(6);
+        }
+        setSlider(currentVal);
+        value = currentVal;
+
+    });
+    // This button will decrement the value till 0
+    $(".qtyminus").click(function (e) {
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('field');
+        // Get its current value
+        var currentVal = parseInt($('input[name=' + fieldName + ']').val()) - 1;
+        // If it isn't undefined or its greater than 0
+        if (!isNaN(currentVal) && currentVal > 0) {
+            // Decrement one
+            $('input[name=' + fieldName + ']').val(currentVal);
+
+        } else {
+            // Otherwise put a 0 there
+            $('input[name=' + fieldName + ']').val(0);
+        }
+        setSlider(currentVal);
+        value = currentVal;
+    });
+
+
+    function setSlider(val) {
+        var input = document.getElementById("slider");
+        input.value = val;
+        input2.value = 6 - val;
+        var colorMap = [
+            { id: 0, color: "#516395" },
+            { id: 1, color: "#546192" },
+            { id: 2, color: "#575B8F" },
+            { id: 3, color: "#59558B" },
+            { id: 4, color: "#5C5089" },
+            { id: 5, color: "#5E4A86" },
+            { id: 6, color: "#614385" }
+        ];
+
+        var bear = $('#valuefield').val();
+        console.log(bear);
+        var color = colorMap.filter(function (x) {
+            console.log(x);
+            return x.id == bear;
+        })[0].color;
+
+        $("body").css("background-color", color);
+
+        //the final value screen
+        var failcolor = '#500428';
+        if(bear == 6){
+           
+            console.log('you are now a monstrous criminal');
+          $("body").css("background-color", failcolor);
+          $('#myform').addClass('hidden');
+          $('#criminal').removeClass('hidden');
+        }
+        if(bear == 0){
+            console.log('you are now a feral bear');
+            $("body").css("background-color", failcolor);
+            $('#myform').addClass('hidden');
+          $('#bear').removeClass('hidden');
+        }
+
+    }
+  
+    $("#slider").change(function () {
+        var ele = $("#slider");
+        var val = ele.val();
+        $('#valuefield').val(6 - val);
+        $('#valuefield2').val(val);
+
+        // if(val > 0 && val < 6 ){
+        //var input2 = document.getElementById("valuefield2");
+        //input2.value = 6-val;
+        //} 
+    })
+    $("#slider").change(function () {
+        var colorMap = [
+            { id: 0, color: "#516395" },
+            { id: 1, color: "#546192" },
+            { id: 2, color: "#575B8F" },
+            { id: 3, color: "#59558B" },
+            { id: 4, color: "#5C5089" },
+            { id: 5, color: "#5E4A86" },
+            { id: 6, color: "#614385" }
+        ];
+
+        var bear = $('#valuefield').val();
+        console.log(bear);
+        var color = colorMap.filter(function (x) {
+            console.log(x);
+            return x.id == bear;
+        })[0].color;
+
+        $("body").css("background-color", color);
+    });
+});
+
+
+</script>
+</html>
