@@ -455,6 +455,9 @@ right:-80%;
 .desktop-nav{
   display:none;
   /*height: 70px;*/
+  position:fixed;
+  top:0;
+  width: 100%;
 }
 .desktop-nav ul.desktop-list{
   /*display:inline-block;*/
@@ -526,6 +529,9 @@ right:-80%;
     }
     .desktop-nav{
       display:block;
+    }
+    .content{
+     padding-top:70px;
     }
 } 
 /* /breakpoints */
