@@ -64,17 +64,12 @@ a:hover {
 }
 
 .container {
-  transition: all 0.2s ease;
+  transition: all 0.5s ease;
   position: absolute;
   color: #3d505a;
 
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
 }
-
 
 .container-inner {
   padding: 20px 60px;
@@ -119,14 +114,12 @@ a:hover {
   color: #552287;
 }
 
-
 .contact-deets {
-  margin: 0 auto;
-  padding: 20px 0px;
+  margin: auto;
+  padding: 20px;
   display: block;
   margin-top: 9vh;
   background: #f9f5fc;
-  width: 100%;
 }
 .contact-deets .section {
   width: 49%;
