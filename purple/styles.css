@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@font-face {
+    font-family: 'CoreSansNR35';
+    src: url('assets/CoreSansNR35.otf'); /* IE9 Compat Modes */
+    src: url('assets/CoreSansNR35.otf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+}
+.disclaimer{
+  position:fixed;
+  bottom:0;
+  display:block;
+  height:auto;
+  padding:10px 60px;
+  background:#fff;
+      -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0,.5);
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
+    color: #3d505a;
+}
+.disclaimer > .button{
+  display:inline-block;
+  margin-left:20px;
+  vertical-align:top;
+  margin-top:0;
+}
+
+.linked-in-box{
+    height:24px;
+    width:24px;
+    background-color:#337ab7;
+    border-radius:3px;
+    margin-top: 2px;
+}
+
+.disclaimer > .text{
+  width:calc(100% - 100px);
+  display:inline-block;
+
+}
+.inline{
+    display:inline-block;
+    vertical-align: top;
+}
+.fa{
+    color:#3d505a;
+}
+.logo {
+  background: url(assets/pam-logo.png) no-repeat;
+  width: 248px;
+  height: 95px;
+  background-size: 248px 95px;
+  margin: 20px 40px;
+}
+.purple {
+  color: #552287;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.2s ease;
+  font-style: normal;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  transition: all 0.5s ease;
+  position: absolute;
+  color: #3d505a;
+
+  width: 100%;
+}
+
+.container-inner {
+  padding: 20px 60px;
+  background: transparent;
+  /* background-color:rgba(241,241,241,0.2); */
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.h-one {
+  background: transparent;
+  font-size: 36px;
+  padding: 10px;
+  line-height: 48px;
+  margin-top: 6vh;
+  margin-bottom: 9vh;
+}
+
+.content-img {
+  width: 30%;
+  display: inline-block;
+}
+.content-text {
+  padding: 10px;
+  vertical-align: top;
+  display: inline-block;
+  width: 67%;
+}
+
+.button {
+  border: 2px solid #552287;
+  background-color: #552287;
+  display: inline-block;
+  padding: 8px 18px;
+  margin-top: 20px;
+  border-radius: 20px;
+  color: #f1f1f1;
+  transition: all 0.2s ease;
+}
+.button:hover {
+  background-color: transparent;
+  color: #552287;
+}
+
+.contact-deets {
+  margin: auto;
+  padding: 20px;
+  display: block;
+  margin-top: 9vh;
+  background: #f9f5fc;
+}
+.contact-deets .section {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+.footer {
+  max-width: 1000px;
+  margin: auto;
+}
+address{
+  font-style:none;
+}
+@media (max-width: 1024px) {
+  .logo {
+    text-align: center;
+    margin: 20px auto;
+    width: 124px;
+    height: 47px;
+    background-size: 124px 47px;
+  }
+  .content-img {
+    width:100%;
+    Max-width:300px;
+    margin-top:6vh;
+  }
+  .content-text {
+    width: 100%;
+  }
+  .button{
+    margin:auto;
+    margin-top:20px;
+    text-align:center;
+  }
+  .btn-a{
+    /* display:block;
+    text-align:center;
+    */
+  }
+  .contact-deets {
+     max-width:1000px;
+    padding:20px 60px;
+
+  }
+  
+  .contact-deets .section {
+    width:100%;
+    max-width:1000px;
+    margin:auto;
+  }
+  .container-inner {
+  padding: 20px;
+}
+  .disclaimer{
+    padding:20px 10px;
+      font-size:12px;
+  }
+  
+  .disclaimer > .button{
+  display:inline-block;
+    text-align:center;
+  margin:auto;
+  vertical-align:top;
+  margin-top:10px;
+}
+}
+
+/* particles js */
+body {
+  margin: 0;
+  font-family: 'CoreSansNR35', "Roboto", sans-serif;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+} /* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.js-count-particles {
+  font-size: 1.1em;
+}
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}

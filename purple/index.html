@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Purple Asset Management</title>
+  <meta name="description" content="Purple Asset Management">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
+</head>
+
+<body>
+<!-- particles.js container -->
+<div id="particles-js">
+  <div class="container">
+    <div class="logo"></div>
+    <div class="container-inner">
+      <div class="h-one">
+        Welcome to <span class="purple">Purple</span> <br> Our new website is currently under construction, for more see below:</div>
+
+      <img class="content-img" src="assets/Global_CIO.PNG"></img>
+      <div class="content-text">We are a truly independent provider of outsourced Chief Investment Officer (CIO) services for single and multi-family offices, and wealth management businesses.<br>
+
+        <a class="btn-a" href="https://purple.investments/#!/">
+          <div class="button">Find out more</div>
+        </a>
+
+      </div>
+
+      
+    </div>
+    <div class="contact-deets" id="contact">
+      <div class="footer"><span style="">Contact Us</span>
+      <p>We'd love to show you more and there are lots of ways to get in touch.</p>
+          <div class="section">Phone <br>
+          <a class="" href="tel:+65 9645 4390" data-contact-method="Phone"><i class="fa fa-fw fa-phone"></i><span class="">+65 9645 4390</span></a>
+
+          <div class=""><br> Email <br>
+          <a class="" href="mailto:hello@purple.investments" data-contact-method="Email"><i class="fa fa-fw fa-envelope"> </i><span class=""> hello@purple.investments</span></a></div>
+
+          <div><br>Social Media
+            <a href="https://www.linkedin.com/company/5871269" target="_blank" data-social-name="LinkedIn"><br><div class="linked-in-box"><i style="color: #fff;
+                margin-left: 6px;
+                margin-top: 4px;" class="fa fa-linkedin"></i></div></a></div><br>
+        </div>
+
+
+          <div class="section">Come and Visit <br>
+          <address class="">
+            <a class="" href="https://www.google.co.uk/maps/place/1+Keong+Saik+Rd,+Singapore" target="_blank" data-contact-method="Map">
+                <i class="fa fa-fw fa-map-marker"></i> <div class="inline">1 Keong Saik Road,<br> 089109,Singapore</div>
+            </a>
+        </address>
+             <br><small>Please let us know first, by phone or email, so we can get fully prepared for your vist.</small><br>
+           </div>
+          </div>
+  </div>
+  </div>
+  <div class="disclaimer" id="disclaimer-box">  <div class="text">
+    Copyright © 2019 Purple Asset Management Pte Ltd. All rights reserved. This website is for the use of Financial Advisors and Accredited Investors only and is not intended for the use of Retail Investors. Purple Asset Management Pte. Ltd. is a company registered in Singapore No. 201616741E and is authorised and regulated by the Monetary Authority of Singapore. Registered office: 9 Raffles Place #27-00 Republic Plaza Singapore, 048619.
+  </div>
+    
+    <button onclick="hideDisclaimer()" class="button">Got it</button>
+  </div>
+
+</div>
+
+<!-- stats - count particles -->
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<!-- stats.js lib -->
+<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+<script>
+    function hideDisclaimer() {
+     var x = document.getElementById("disclaimer-box");
+     if (x.style.display === "none") {
+       x.style.display = "block";
+     } else {
+       x.style.display = "none";
+     }
+   }
+   
+   particlesJS("particles-js", {"particles":{"number":{"value":10,"density":{"enable":true,"value_area":800}},"color":{"value":"#b67fc8"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":8,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"repulse"},"onclick":{"enable":false,"mode":"push"},"resize":true},"modes":{"grab":{"distance":431.5684315684316,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+   </script>
+</body>
+</html>
