@@ -33,30 +33,48 @@
                         Stranger, no time for a proper introduction. We're all in grave danger. You, me, and everyone here are marked for termination by Alliansen Incorporated. Immediate action is crucial; the execution unit is already en route. I go by PixelPaw. </p>
                         <img class="inline-block" src="img/PixelPaw.gif" style="height:64px; width:64px;">
                         <p class="mt-0">
-                        I am sending this message to you and your chooms, this is only available connection. But I gotta keep a low profile as the ICE defenses are closing in on me. If you help me breach their data fortress, I can free myself, wipe any trace they have on you and your associates, and drain their creds. Your choice: go solo, team up with others, or perhaps, betray them at the last minute to claim all the creds(¤) for yourself.</p>
+                       All of your chooms nearby also are getting this message, but i can only access this localNet. But I gotta keep a low profile as the ICE defenses are closing in on me. If you help me breach their data fortress, I can free myself, wipe any trace they have on you and your associates, and drain their creds. Your choice: go solo, team up with others, or perhaps, betray them at the last minute to claim all the creds(¤) for yourself.</p>
                         <p> What say you?</p>
                      </label>
                  </div>
                
-                  <!-- #endregion -->  
-                  <div class="" style="text-align: right;" >
-                  <button class="cyber-button-small bg-blue fg-white block mb-2" style="float:right; position: relative;">
-                    Sure, sounds fun
-                    <span class="glitchtext">Sure, sounds fun</span>
-                    <span class="tag fg-white">R25</span>
-                </button>
+                 <!-- #endregion -->  
+                 <!-- #answers -->
+                <div class="" style="text-align: right;" >
+                    <button id="text-yes" class="cyber-button-small bg-blue fg-white block mb-2" style="float:right; position: relative;">
+                        Sure, sounds fun
+                        <span class="glitchtext">Sure, sounds fun</span>
+                        <span class="tag fg-white">R25</span>
+                    </button>
                 </div>
-            <div class="" style="clear: right;">
-                <button class="cyber-button-small bg-blue fg-white block mb-2" style="float:right; position: relative;">
-                    You got a wrong number you weirdo
-                    <span class="glitchtext">You got a wrong number you weirdo</span>
-                    <span class="tag fg-white">R26</span>
-                </button>
-                <div class="" style="clear: right;"></div>
-            </div>
-               
+                <div class="" style="clear: right;">
+                    <button id="text-no" class="cyber-button-small bg-blue fg-white block mb-2" style="float:right; position: relative;">
+                        You got a wrong number you weirdo
+                        <span class="glitchtext">You got a wrong number you weirdo</span>
+                        <span class="tag fg-white">R26</span>
+                    </button>
+                    <div class="" style="clear: right;"></div>
+                </div>
+               <!-- #endregion --> 
+
+                <!-- #spam text -->
+               <div id="spam" class="hidden">
+                <div  class="cyber-tile-small fg-black bg-cyan mr-4 inline-block vt-bot mb-4">
+
+                    <label>
+                        <p class="">
+                        We've been trying to reach you about your implant's extended warranty. You should've received a notice in the mail regarding your car's extended warranty eligibility. As we haven't received a response, we're sending this final courtesy message before we close your file. Reply "SUBSCRIBE" to receive additional marketing and our best deals first. If you're interested in extending or reinstating your implant's warranty, reply "WARRANTY" to speak with a automated agent. </p>
+                    </label>
+                </div>
+                <div class="cyber-input ac-yellow fg-white">
+                    <input type="text" placeholder="purple accent, green text..." />
+                </div>
+                </div> 
+                <!-- #endregion --> 
             </div>
 
+
+<!-- #endregion -->     
         </div>
                      <!-- #artefact -->
                      <div class="">
@@ -82,6 +100,11 @@
                     <a href="https://awforsaken.github.io/data/" style="    text-decoration:none;"><div class="spc fg-white">–</div></a>
                     </div>  
 
+
+
+
+
+
         <div id="footer-spacer" class="mb-12"></div>
 
         <div id="footer" class="bg-black fg-white cyber-razor-top p-2 fixed-bottom">
@@ -90,4 +113,11 @@
               <!-- #endregion -->  
         </div>
     </body>
+    <script>
+        $(function() {                       //run when the DOM is ready
+  $("#text-no").click(function() {  //use a class, since your ID gets mangled
+    $("#spam").toggleClass("hidden");      //add the class to the clicked element
+  });
+});
+    </script>
 </html>

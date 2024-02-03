@@ -24,7 +24,7 @@ See index.html for usage.
 
 .fixed-top{top: 0 !important;}
 .fixed-bottom{bottom: 0 !important;}
-
+.hidden{display:none !important;}
 .block{display: block !important;}
 .inline{ display: inline !important;}
 .inline-block{ display: inline-block !important;}
