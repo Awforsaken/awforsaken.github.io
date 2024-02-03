@@ -280,7 +280,6 @@ body
 
     cursor: pointer;
     background: transparent !important;
-    text-transform: uppercase;
     font-size: var(--button-font-size);
     font-weight: 700;
     letter-spacing: 2px;
@@ -640,7 +639,7 @@ body
 /*Overriding the values*/
 .cyber-tile-small
 {
-    --tile-width: 240px;
+    --tile-width: 80%;
     --tile-edges: 14px;
 }
 
@@ -1124,7 +1123,10 @@ label
     {
         max-width: 100%;
     }
-
+    .cyber-tile-small
+    {
+        max-width: 70%;
+    }
     .cyber-tile-big
     {
         max-width: 100%;

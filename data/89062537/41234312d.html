@@ -10,7 +10,7 @@
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
 
-        <title>Confirmation</title>
+        <title>HELP</title>
         <script src="jquery-3.6.1.min.js"></script>
         <script src="helper.js?v=3"></script>
         <link rel="stylesheet" href="cyber-grid.css?v=3">
@@ -19,128 +19,69 @@
         <link rel="icon" type="image/png" href="img/favicon.png" sizes="512x512">
     </head>
 
-    <body>
-        <div id="header" class="bg-black fg-white cyber-razor-bottom p-2">
+    <body class="bg-black" style="">
+        <div id="header" class="bg-cyan fg-white cyber-razor-bottom p-2">
         </div>
         <div id="main" class="container">
-            <div class="pt-0 pl-4 pb-4 pr-4">
+            <div class="pt-2 pl-4 pb-4 pr-4">
 
-                <!-- #region invite -->
-                <h1 class="cyber-h">Further instructions</h1>
-                <div>
-                    <p>Date is coming closer and i am excited to see you all soon. Plan is to meet up at <code class="bg-black ac-cyan">~17.45</code>  next to the entrance of <a href = "https://nerfax.co.uk/">simulated gunfight facility</a>. Once the activity has concluded <code class="bg-black ac-cyan">~19.00</code> we will make our (either tram or driving) to the hideout at 9 Mirabel Street.</p>
-                    </div>
+                 <!-- #region Tiles -->
+                 <div class="cyber-tile-small fg-white bg-purple mr-4 inline-block vt-bot cyber-glitch-1 mb-4">
 
-                <div class="cyber-tile-big fg-white bg-blue mr-4">
-                    <label>
-                        <h3 class="cyber-glitch-0">[OPTIONAL]</h3>
-                        <p class="ac-red">We might be around area bit earlier and grab a bev somewhere nearby, if you are interested in this get in touch with the administrator.</p>
-                    </label>        
-                </div>
+                     <label>
+                        <p class="mb-0">
+                        Stranger, no time for a proper introduction. We're all in grave danger. You, me, and everyone here are marked for termination by Alliansen Incorporated. Immediate action is crucial; the execution unit is already en route. I go by PixelPaw. </p>
+                        <img class="inline-block" src="img/PixelPaw.gif" style="height:64px; width:64px;">
+                        <p class="mt-0">
+                        I am sending this message to you and your chooms, this is only available connection. But I gotta keep a low profile as the ICE defenses are closing in on me. If you help me breach their data fortress, I can free myself, wipe any trace they have on you and your associates, and drain their creds. Your choice: go solo, team up with others, or perhaps, betray them at the last minute to claim all the creds(¤) for yourself.</p>
+                        <p> What say you?</p>
+                     </label>
+                 </div>
+               
                   <!-- #endregion -->  
-
+                  <div class="" style="text-align: right;" >
+                  <button class="cyber-button-small bg-blue fg-white block mb-2" style="float:right; position: relative;">
+                    Sure, sounds fun
+                    <span class="glitchtext">Sure, sounds fun</span>
+                    <span class="tag fg-white">R25</span>
+                </button>
+                </div>
+            <div class="" style="clear: right;">
+                <button class="cyber-button-small bg-blue fg-white block mb-2" style="float:right; position: relative;">
+                    You got a wrong number you weirdo
+                    <span class="glitchtext">You got a wrong number you weirdo</span>
+                    <span class="tag fg-white">R26</span>
+                </button>
+                <div class="" style="clear: right;"></div>
+            </div>
                
             </div>
 
         </div>
                      <!-- #artefact -->
-                     <div class="p-4 cyber-att-2 pl-4">
-                        <div class="">
-                            <style>
-                            .spc {
-                            animation: char 2s steps(8, end) 1s infinite;
-                            font-family: monospace;
-                            transform: rotate(0deg); 
-                            width:40px;
-                            height:40px;
-                            text-align:center;
-                            font-weight:900;
-                            font-size:40px;
-                            line-height:40px;
-                        
+                     <div class="">
+                        <style>
+                        .spc {
+                        animation: char 2s steps(8, end) 1s infinite;
+                        font-family: monospace;
+                        transform: rotate(0deg); 
+                        width:40px;
+                        height:40px;
+                        text-align:center;
+                        font-weight:900;
+                        font-size:40px;
+                        line-height:40px;
+                    
+                    }
+                    @keyframes char {
+                    to {
+                        transform: rotate(-360deg);
                         }
-                        @keyframes char {
-                        to {
-                            transform: rotate(-360deg);
-                            }
-                        }
-                            </style>
-                        <a href="https://awforsaken.github.io/data/" style="    text-decoration:none;"><div class="spc fg-white">–</div></a>
-                        </div>  
-                        <div class="">
-                            <style>
-                        .hidden {
-                            opacity:0;
-                        }
-                        .console-container {
-                        
-                            color:white;
-                            top:0;
-                            bottom:0;
-                            left:0;
-                            right:0;
-                            margin:auto;
-                        }
-        
-                            </style>
-                            
-                        <code class='console-container'><span id='text'></span></code>
-                        <script>// function([string1, string2],target id,[color1,color2])    
-                            consoleText(['s-sudo hack_the_mainframe -bypass_firewall -encrypt_soul -launch_missiles -profit - data_archive.bin --output decoded_data Hollywood Hackorama', 
-                            'matrix@reality_simulation:~$ sudo open_tunnel_to_universe -quantum_leap -download_enlightenment -exit_simulation Text -The Matrix', 
-                            'agent@virtual_reality:~$ sudo_simulate_dreamscape -insert_flying_pigs -create_infinite_cookies -hack_subconscious_mind -Inception'], 'text',['']);
-                        
-                        function consoleText(words, id, colors) {
-                            if (colors === undefined) colors = ['#fff'];
-                            var visible = true;
-                            var con = document.getElementById('console');
-                            var letterCount = 1;
-                            var x = 1;
-                            var waiting = false;
-                            var target = document.getElementById(id)
-                            target.setAttribute('style', 'color:' + colors[0])
-                            window.setInterval(function() {
-                        
-                            if (letterCount === 0 && waiting === false) {
-                                waiting = true;
-                                target.innerHTML = words[0].substring(0, letterCount)
-                                window.setTimeout(function() {
-                                var usedColor = colors.shift();
-                                colors.push(usedColor);
-                                var usedWord = words.shift();
-                                words.push(usedWord);
-                                x = 1;
-                                target.setAttribute('style', 'color:' + colors[0])
-                                letterCount += x;
-                                waiting = false;
-                                }, 500)
-                            } else if (letterCount === words[0].length + 1 && waiting === false) {
-                                waiting = true;
-                                window.setTimeout(function() {
-                                x = -1;
-                                letterCount += x;
-                                waiting = false;
-                                }, 500)
-                            } else if (waiting === false) {
-                                target.innerHTML = words[0].substring(0, letterCount)
-                                letterCount += x;
-                            }
-                            }, 20)
-                            window.setInterval(function() {
-                            if (visible === true) {
-                                con.className = 'console-underscore hidden'
-                                visible = false;
-                        
-                            } else {
-                                con.className = 'console-underscore'
-                        
-                                visible = true;
-                            }
-                            }, 400)
-                        }
-                            </script>
-                        </div>
-                    </div>
+                    }
+                        </style>
+                    <a href="https://awforsaken.github.io/data/" style="    text-decoration:none;"><div class="spc fg-white">–</div></a>
+                    </div>  
+
         <div id="footer-spacer" class="mb-12"></div>
 
         <div id="footer" class="bg-black fg-white cyber-razor-top p-2 fixed-bottom">
