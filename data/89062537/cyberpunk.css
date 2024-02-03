@@ -654,7 +654,7 @@ code,
     background-color: var(--dark);
     color: var(--cyan);
     padding: .3rem .4rem .2rem .4rem;
-    font-family:  monospace !important;
+    font-family: 'IBM Plex Mono', monospace!important;
     font-size: .8rem;
     font-weight: 600;
 }
