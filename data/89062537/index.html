@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" lang="en">
+
+        <meta property="og:site_name" content="Urgent">
+        <meta property="og:title" content="Urgent" />
+        <meta property="og:description" content="Urgent" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+
+        <title>Confirmation</title>
+        <script src="jquery-3.6.1.min.js"></script>
+        <script src="helper.js?v=3"></script>
+        <link rel="stylesheet" href="cyber-grid.css?v=3">
+        <link rel="stylesheet" href="cyberpunk.css?v=3">
+        <link rel="stylesheet" href="style.css?v=3">
+        <link rel="icon" type="image/png" href="img/favicon.png" sizes="512x512">
+    </head>
+
+    <body>
+        <div id="header" class="bg-black fg-white cyber-razor-bottom p-2">
+        </div>
+        <div id="main" class="container">
+            <div class="pt-0 pl-4 pb-4 pr-4">
+
+                <!-- #region invite -->
+                <h1 class="cyber-h">Further instructions</h1>
+                <div>
+                    <p>Date is coming closer and i am excited to see you all soon. Plan is to meet up at <code class="bg-black ac-cyan">~17.45</code>  next to the entrance of <a href = "https://nerfax.co.uk/">simulated gunfight facility</a>. Once the activity has concluded <code class="bg-black ac-cyan">~19.00</code> we will make our (either tram or driving) to the hideout at 9 Mirabel Street.</p>
+                    </div>
+
+                <div class="cyber-tile-big fg-white bg-blue mr-4">
+                    <label>
+                        <h3 class="cyber-glitch-0">[OPTIONAL]</h3>
+                        <p class="ac-red">We might be around area bit earlier and grab a bev somewhere nearby, if you are interested in this get in touch with the administrator.</p>
+                    </label>        
+                </div>
+                  <!-- #endregion -->  
+
+               
+            </div>
+
+        </div>
+                     <!-- #artefact -->
+                     <div class="p-4 cyber-att-2 pl-4">
+                        <div class="">
+                            <style>
+                            .spc {
+                            animation: char 2s steps(8, end) 1s infinite;
+                            font-family: monospace;
+                            transform: rotate(0deg); 
+                            width:40px;
+                            height:40px;
+                            text-align:center;
+                            font-weight:900;
+                            font-size:40px;
+                            line-height:40px;
+                        
+                        }
+                        @keyframes char {
+                        to {
+                            transform: rotate(-360deg);
+                            }
+                        }
+                            </style>
+                        <a href="41234312.html" style="    text-decoration:none;"><div class="spc fg-white">–</div></a>
+                        </div>  
+                        <div class="">
+                            <style>
+                        .hidden {
+                            opacity:0;
+                        }
+                        .console-container {
+                        
+                            color:white;
+                            top:0;
+                            bottom:0;
+                            left:0;
+                            right:0;
+                            margin:auto;
+                        }
+        
+                            </style>
+                            
+                        <code class='console-container'><span id='text'></span></code>
+                        <script>// function([string1, string2],target id,[color1,color2])    
+                            consoleText(['s-sudo hack_the_mainframe -bypass_firewall -encrypt_soul -launch_missiles -profit - data_archive.bin --output decoded_data Hollywood Hackorama', 
+                            'matrix@reality_simulation:~$ sudo open_tunnel_to_universe -quantum_leap -download_enlightenment -exit_simulation Text -The Matrix', 
+                            'agent@virtual_reality:~$ sudo_simulate_dreamscape -insert_flying_pigs -create_infinite_cookies -hack_subconscious_mind -Inception'], 'text',['']);
+                        
+                        function consoleText(words, id, colors) {
+                            if (colors === undefined) colors = ['#fff'];
+                            var visible = true;
+                            var con = document.getElementById('console');
+                            var letterCount = 1;
+                            var x = 1;
+                            var waiting = false;
+                            var target = document.getElementById(id)
+                            target.setAttribute('style', 'color:' + colors[0])
+                            window.setInterval(function() {
+                        
+                            if (letterCount === 0 && waiting === false) {
+                                waiting = true;
+                                target.innerHTML = words[0].substring(0, letterCount)
+                                window.setTimeout(function() {
+                                var usedColor = colors.shift();
+                                colors.push(usedColor);
+                                var usedWord = words.shift();
+                                words.push(usedWord);
+                                x = 1;
+                                target.setAttribute('style', 'color:' + colors[0])
+                                letterCount += x;
+                                waiting = false;
+                                }, 500)
+                            } else if (letterCount === words[0].length + 1 && waiting === false) {
+                                waiting = true;
+                                window.setTimeout(function() {
+                                x = -1;
+                                letterCount += x;
+                                waiting = false;
+                                }, 500)
+                            } else if (waiting === false) {
+                                target.innerHTML = words[0].substring(0, letterCount)
+                                letterCount += x;
+                            }
+                            }, 20)
+                            window.setInterval(function() {
+                            if (visible === true) {
+                                con.className = 'console-underscore hidden'
+                                visible = false;
+                        
+                            } else {
+                                con.className = 'console-underscore'
+                        
+                                visible = true;
+                            }
+                            }, 400)
+                        }
+                            </script>
+                        </div>
+                    </div>
+        <div id="footer-spacer" class="mb-12"></div>
+
+        <div id="footer" class="bg-black fg-white cyber-razor-top p-2 fixed-bottom">
+
+
+              <!-- #endregion -->  
+        </div>
+    </body>
+</html>
