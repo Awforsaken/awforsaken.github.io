@@ -27,7 +27,13 @@
     font-family: Cyberpunk;
     src: url(fonts/Cyberpunk.otf) format('opentype');
 }
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap');
+
+
+@font-face 
+{
+    font-family: IBMPlexMono;
+    src: url(fonts/IBMPlexMono-Medium.ttf) format('opentype');
+}
 /*#endregion*/
 
 /*#region top level elements*/
