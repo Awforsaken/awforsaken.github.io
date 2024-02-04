@@ -151,15 +151,23 @@
             $(".answ1").delay(2000).show("pulsate");  
             // spam message
             $("#text-no").click(function() {             
-                $(".text-help").hide("pulsate"); 
+                $(".msg1, .answ1").hide("pulsate"); 
                 $("#spam").delay(400).show("pulsate");  
             });
             $("#text-yes").click(function() {  
-            //.toggleClass("hidden")              
-            $(".answ1").hide(); 
-            $(".msg-reply1").show("slide", 200);
-            $(".msg2").delay(1000).show("slide", 400);    
-            });
+                //.toggleClass("hidden")              
+                $(".answ1").delay(200).hide(); 
+                $(".msg-reply1").delay(400).show("slide", 200);
+                $(".msg2").delay(1000).show("slide", 400); 
+            
+        //     $('.msg2')[0].scrollIntoView(false)
+
+
+        //     $("body,html").animate({
+        //     scrollTop: $(".msg2").offset().top
+        // }, 800);
+                });   
+
         });
     </script>
 </html>
