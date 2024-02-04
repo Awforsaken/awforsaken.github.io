@@ -12,6 +12,7 @@
 
         <title>HELP</title>
         <script src="jquery-3.6.1.min.js"></script>
+        <script src="jquery-ui.min.js"></script>
         <script src="helper.js?v=3"></script>
         <link rel="stylesheet" href="cyber-grid.css?v=3">
         <link rel="stylesheet" href="cyberpunk.css?v=3">
@@ -25,58 +26,60 @@
         <div id="main" class="container">
             <div class="pt-2 pl-4 pb-4 pr-4">
 
-                 <!-- #region Tiles -->
-                 <div class="cyber-tile-small fg-white bg-purple mr-4 inline-block vt-bot cyber-glitch-1 mb-4">
+                 <!-- #region msg1 -->
+                 <div class="text-help msg1 cyber-tile-small fg-white bg-purple mr-4 vt-bot cyber-glitch-1 mb-4" style="display: none">
 
                      <label>
+                        <h3>Ǝ̴̗̅x̷̞̑Ɉ̸̖̈́ɘ̵͙͗n̸̡̐b̵̩́ɘ̶̝̍b̶̳̒ ̶̛̫w̵̬̏ɒ̶̭̍ɿ̷͙͋ɿ̶̣͗ɒ̵͙̃ṇ̴͘Ɉ̵̻̅γ̸͔̌ </h3>
+                        <h4>From: 👤 P̵i̸x̵e̸l̶P̶a̵w̶</h4>
                         <p class="mb-0">
                         Stranger, no time for a proper introduction. We're all in grave danger. You, me, and everyone here are marked for termination by Alliansen Incorporated. Immediate action is crucial; the execution unit is already en route. I go by PixelPaw. </p>
                         <img class="inline-block" src="img/PixelPaw.gif" style="height:64px; width:64px;">
                         <p class="mt-0">
                        All of your chooms nearby also are getting this message, but i can only access this localNet. But I gotta keep a low profile as the ICE defenses are closing in on me. If you help me breach their data fortress, I can free myself, wipe any trace they have on you and your associates, and drain their creds. Your choice: go solo, team up with others, or perhaps, betray them at the last minute to claim all the creds(¤) for yourself.</p>
-                        <p> What say you?</p>
+                        <p class="mb-0"> What say you?</p>
                      </label>
                  </div>
                
                  <!-- #endregion -->  
-                 <!-- #answers -->
-                <div class="" style="text-align: right;" >
-                    <button id="text-yes" class="cyber-button-small bg-blue fg-white block mb-2" style="float:right; position: relative;">
-                        Sure, sounds fun
-                        <span class="glitchtext">Sure, sounds fun</span>
-                        <span class="tag fg-white">R25</span>
-                    </button>
-                </div>
-                <div class="" style="clear: right;">
-                    <button id="text-no" class="cyber-button-small bg-blue fg-white block mb-2" style="float:right; position: relative;">
-                        You got a wrong number you weirdo
-                        <span class="glitchtext">You got a wrong number you weirdo</span>
-                        <span class="tag fg-white">R26</span>
-                    </button>
-                    <div class="" style="clear: right;"></div>
+                 <!-- #options -->
+                <div class="cyber-glitch-2 text-help answ1" style="display: none">
+                    <div class="" >
+                        <button id="text-yes" class="cyber-button-small bg-blue fg-white block mb-2 " style="float:right; position: relative;">
+                            Sure, I like being alive
+                            <span class="glitchtext">Save us</span>
+                            <span class="tag fg-white">R25</span>
+                        </button>
+                    </div>
+                    <div class="" style="clear: right;">
+                        <button id="text-no" class="cyber-button-small bg-blue fg-white block mb-2 " style="float:right; position: relative;">
+                            Wrong number, not interested
+                            <span class="glitchtext">Fuck off</span>
+                            <span class="tag fg-white">R26</span>
+                        </button>
+                        <div class="" style="clear: right;"></div>
+                    </div>
                 </div>
                <!-- #endregion --> 
 
-                <!-- #spam text -->
-               <div id="spam" class="hidden">
-                <div  class="cyber-tile-small fg-black bg-cyan mr-4 inline-block vt-bot mb-4">
+                <!-- #region reply1 -->
+                <div class="text-help msg-reply1 cyber-tile-small fg-white bg-blue mr-4 cyber-glitch-1 mb-4" style="display: none;  float:right;">
 
                     <label>
-                        <p class="">
-                        We've been trying to reach you about your implant's extended warranty. You should've received a notice in the mail regarding your car's extended warranty eligibility. As we haven't received a response, we're sending this final courtesy message before we close your file. Reply "SUBSCRIBE" to receive additional marketing and our best deals first. If you're interested in extending or reinstating your implant's warranty, reply "WARRANTY" to speak with a automated agent. </p>
+                        <p class="mb-0 mt-0 inline-block">Sure, I like being alive</p>
                     </label>
                 </div>
-                <div class="cyber-input ac-yellow fg-white">
-                    <input type="text" placeholder="purple accent, green text..." />
-                </div>
-                </div> 
-                <!-- #endregion --> 
-            </div>
+                <div style="clear:right;"></div>
+                <!-- #endregion -->  
 
+                <!-- #region msg2 -->
+                <div class="text-help msg2 cyber-tile-small fg-white bg-purple mr-4 vt-bot cyber-glitch-1 mb-4" style="display: none;">
 
-<!-- #endregion -->     
-        </div>
-                     <!-- #artefact -->
+                    <label>
+                        <h4>From: 👤 P̵i̸x̵e̸l̶P̶a̵w̶</h4>
+                        <p class="mb-0">
+                        Alliesin netrunners have already infiltrated your comms. Earlier, I deployed an ICE on your localnet, but the upload only partially worked. It might have exposed their GHOSTWARE. I've found the artifact used by Alliesin:</p>
+                                             <!-- #artefact -->
                      <div class="">
                         <style>
                         .spc {
@@ -97,8 +100,36 @@
                         }
                     }
                         </style>
-                    <a href="https://awforsaken.github.io/data/" style="    text-decoration:none;"><div class="spc fg-white">–</div></a>
+                    <div class="spc fg-white">–</div>
                     </div>  
+                    <!-- # artefact end endregion -->  
+                    <p class="mt-0">Locating it might lead you to their netrunners.</p>
+                    </label>
+                </div>
+                <!-- #endregion -->  
+
+                <!-- #spam text -->
+               <div id="spam" style="display: none">
+                <div  class="cyber-tile-small fg-black bg-cyan mr-4 inline-block vt-bot mb-4">
+
+                    <label>
+                        <h3>⚠️ Extended warranty ⚠️ </h3>
+                        <h4>From: 👤 Kaytell Makers</h4>
+                        <p class="">
+                        We've been trying to reach you about your implant's extended warranty. You should've received a notice in the mail regarding your car's extended warranty eligibility. As we haven't received a response, we're sending this final courtesy message before we close your file. Reply "SUBSCRIBE" to receive additional marketing and our best deals first. If you're interested in extending or reinstating your implant's warranty, reply "WARRANTY" to speak with a automated agent. </p>
+                    </label>
+                </div>
+                <div class="cyber-input ac-yellow fg-white">
+                    <input type="text" placeholder="purple accent, green text..." />
+                </div>
+                </div> 
+                <!-- #endregion --> 
+            </div>
+
+
+<!-- #endregion -->     
+        </div>
+
 
 
 
@@ -114,10 +145,21 @@
         </div>
     </body>
     <script>
-        $(function() {                       //run when the DOM is ready
-  $("#text-no").click(function() {  //use a class, since your ID gets mangled
-    $("#spam").toggleClass("hidden");      //add the class to the clicked element
-  });
-});
+        $(function() {   
+            // Initiating first message   
+            $(".msg1").delay(400).show("slide", 200);  
+            $(".answ1").delay(2000).show("pulsate");  
+            // spam message
+            $("#text-no").click(function() {             
+                $(".text-help").hide("pulsate"); 
+                $("#spam").delay(400).show("pulsate");  
+            });
+            $("#text-yes").click(function() {  
+            //.toggleClass("hidden")              
+            $(".answ1").hide(); 
+            $(".msg-reply1").show("slide", 200);
+            $(".msg2").delay(1000).show("slide", 400);    
+            });
+        });
     </script>
 </html>
