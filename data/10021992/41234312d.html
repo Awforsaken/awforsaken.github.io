@@ -37,21 +37,20 @@
         }
     </style>
     <body class="bg-black text-center" style="">
-        <img style=" width:200px; height:200px;border-radius:50%;" class="logo mt-4 mb-4" src="img/Alliensen.svg"></img>
-        <div id="login-form" style="display: none;">
+        <img style=" width:120px; height:120px;border-radius:50%;" class="logo mt-4 mb-4" src="img/Alliensen.svg"></img>
+        <div id="login-form" style="display: nonee;">
 
             <div class="login-card cyber-tile m-4 p4" style=" width:calc(100% - 64px)" >
                 <div id="main" class="container">
                     <div class="m-4">
-                        <h1 class="fg-cyan text-center mr-4 ml-4">Remote login access to workstation32</h1>
+                        <h2 class="fg-cyan text-center mr-4 ml-4"> Workstation32 remote login</h2>
                         <img style=" width:200px; height:200px;border-radius:50%;" class="logo mt-4 mb-4" src="img/pussy.jpg"></img>
                         <form name="login">
-                    
-                          <input type="text" class="form-control" placeholder="Username" name="userid" />
-                    
-                          <input type="password" class="form-control" id="pass" placeholder="Password" name="pswrd" />
-                          
-                          <input class="btn btn-primary" type="button" onclick="check(this.form)" value="Log in" />
+                            
+                            <input type="text" class="form-control cyber-input text-center mb-1" placeholder="Username" name="userid" />
+                          <input type="password" class="form-control cyber-input text-center mb-1" id="pass" placeholder="Password" name="pswrd" />
+                          <div class="block"></div>
+                          <input class=" cyber-input" type="button" onclick="check(this.form)" value="Log in" />
                       </div>
                       </form>
                       </div>
@@ -91,16 +90,16 @@
         </div>
     </body>
     <script>
-        $(document).ready(function(){
-            
-            var passwordPairs = {
+           var passwordPairs = {
   "Victor.Blackwell": "black_cat_neon",
-  "sford85": "password2"
+  "admin": "password"
 }
 
 function check(form) {
+    alert("clicked");
   if (passwordPairs[form.userid.value] === form.pswrd.value)
   { 
+    alert("checked");
     window.open('target.html');
     alert("success");
     return false;
@@ -119,6 +118,9 @@ function check(form) {
 
 
 
+        $(document).ready(function(){
+            
+         
 
         });
        
