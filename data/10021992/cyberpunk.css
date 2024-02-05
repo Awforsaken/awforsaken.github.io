@@ -814,6 +814,9 @@ h6.cyber-h
 }
 /*#endregion*/
 
+.text-center{
+    text-align: center;
+}
 /*#region banners*/
 .cyber-banner,
 .cyber-banner-short

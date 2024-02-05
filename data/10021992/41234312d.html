@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" lang="en">
+
+        <meta property="og:site_name" content="Urgent">
+        <meta property="og:title" content="Urgent" />
+        <meta property="og:description" content="Urgent" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+
+        <title>Login</title>
+        <script src="jquery-3.6.1.min.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <script src="helper.js?v=3"></script>
+        <link rel="stylesheet" href="cyber-grid.css?v=3">
+        <link rel="stylesheet" href="cyberpunk.css?v=3">
+        <link rel="stylesheet" href="style.css?v=3">
+        <link rel="icon" type="image/png" href="img/favicon.png" sizes="512x512">
+    </head>
+
+    <style>
+
+        .login-box {
+        text-align: center;
+
+        }
+
+
+        .login-card {
+            margin:auto;
+            text-align: center;
+            backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);  
+        }
+    </style>
+    <body class="bg-black text-center" style="">
+        <img style=" width:200px; height:200px;border-radius:50%;" class="logo mt-4 mb-4" src="img/Alliensen.svg"></img>
+        <div id="login-form" style="display: none;">
+
+            <div class="login-card cyber-tile m-4 p4" style=" width:calc(100% - 64px)" >
+                <div id="main" class="container">
+                    <div class="m-4">
+                        <h1 class="fg-cyan text-center mr-4 ml-4">Remote login access to workstation32</h1>
+                        <img style=" width:200px; height:200px;border-radius:50%;" class="logo mt-4 mb-4" src="img/pussy.jpg"></img>
+                        <form name="login">
+                    
+                          <input type="text" class="form-control" placeholder="Username" name="userid" />
+                    
+                          <input type="password" class="form-control" id="pass" placeholder="Password" name="pswrd" />
+                          
+                          <input class="btn btn-primary" type="button" onclick="check(this.form)" value="Log in" />
+                      </div>
+                      </form>
+                      </div>
+                      <a class="fg-cyan " id="reminder-trigger" style="text-decoration: underline;">
+                        Forgot password?
+                      </a>
+                      <code style="display:none;"  class="code-block mt-2 reminder fg-white" data-title="In accordance with your employment agreement, each utilization of the password reminder feature will result in the deduction of one annual leave day from your entitlement. Your hint is:">color_species_name 
+                      </code>
+        
+        
+           
+                </div>
+            </div>
+
+            <div class="cyber-att m-4" style="text-align: center;">
+                <div >Remote session expired</div>
+                <a class="fg-cyan mb-2" id="login-trigger" style="text-decoration: underline;">
+                    Remote login
+                  </a>
+            </div>
+        </div>
+
+        
+
+
+
+
+
+
+
+        <div id="footer-spacer" class="mb-12"></div>
+
+        <div id="footer" class="bg-black fg-white cyber-razor-top p-2 fixed-bottom">
+
+
+              <!-- #endregion -->  
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            
+            var passwordPairs = {
+  "Victor.Blackwell": "black_cat_neon",
+  "sford85": "password2"
+}
+
+function check(form) {
+  if (passwordPairs[form.userid.value] === form.pswrd.value)
+  { 
+    window.open('target.html');
+    alert("success");
+    return false;
+  }
+
+
+}
+    $("#reminder-trigger").click(function() {             
+                $(".reminder").show("bounce"); 
+            });
+
+            $("#login-trigger").click(function() {             
+                $(".cyber-att").hide("fold"); 
+                $("#login-form").delay(400).show("fold");  
+            });
+
+
+
+
+        });
+       
+    </script>
+</html>
