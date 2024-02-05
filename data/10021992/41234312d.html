@@ -26,7 +26,10 @@
         text-align: center;
 
         }
-
+        .form-control {
+            height: 32px;
+            width:100%;
+        }
 
         .login-card {
             margin:auto;
@@ -37,20 +40,20 @@
         }
     </style>
     <body class="bg-black text-center" style="">
-        <img style=" width:120px; height:120px;border-radius:50%;" class="logo mt-4 mb-4" src="img/Alliensen.svg"></img>
+        <img style=" width:120px; height:120px;border-radius:50%;" class=" mt-4" src="img/Alliensen.svg"></img>
         <div id="login-form" style="display: nonee;">
 
             <div class="login-card cyber-tile m-4 p4" style=" width:calc(100% - 64px)" >
                 <div id="main" class="container">
                     <div class="m-4">
                         <h2 class="fg-cyan text-center mr-4 ml-4"> Workstation32 remote login</h2>
-                        <img style=" width:200px; height:200px;border-radius:50%;" class="logo mt-4 mb-4" src="img/pussy.jpg"></img>
+                        <img style=" max-width:200px; height:200px;border-radius:50%;" class="logo mt-4 mb-4" src="img/pussy.jpg"></img>
                         <form name="login">
                             
                             <input type="text" class="form-control cyber-input text-center mb-1" placeholder="Username" name="userid" />
                           <input type="password" class="form-control cyber-input text-center mb-1" id="pass" placeholder="Password" name="pswrd" />
                           <div class="block"></div>
-                          <input class=" cyber-input" type="button" onclick="check(this.form)" value="Log in" />
+                          <input class="cyber-input bg-cyan pl-2 pr-2" type="button" onclick="check(this.form)" value="Log in" />
                       </div>
                       </form>
                       </div>
