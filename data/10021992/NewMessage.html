@@ -117,35 +117,29 @@
                         <h4>From: 👤 Kaytell Makers</h4>
                         <p class="">
                         We've been trying to reach you about your implant's extended warranty. You should've received a notice in the mail regarding your car's extended warranty eligibility. As we haven't received a response, we're sending this final courtesy message before we close your file. Reply "SUBSCRIBE" to receive additional marketing and our best deals first. If you're interested in extending or reinstating your implant's warranty, reply "WARRANTY" to speak with a automated agent. </p>
+                        <p>I will be in touch</p>
                     </label>
                 </div>
                 <div class="cyber-input ac-yellow fg-white">
                     <input type="text" placeholder="purple accent, green text..." />
                 </div>
-                </div> 
+                
+            </div> 
+            <div class="mb-30"></div>
                 <!-- #endregion --> 
-            </div>
+        </div>
 
 
 <!-- #endregion -->     
         </div>
 
 
-
-
-
-
-
-        <div id="footer-spacer" class="mb-12"></div>
-
-        <div id="footer" class="bg-black fg-white cyber-razor-top p-2 fixed-bottom">
-
-
-              <!-- #endregion -->  
-        </div>
     </body>
     <script>
         $(function() {   
+            function scrollToBottom() {
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+  }
             // Initiating first message   
             $(".msg1").delay(400).show("slide", 200);  
             $(".answ1").delay(2000).show("pulsate");  
@@ -159,7 +153,8 @@
                 $(".answ1").delay(200).hide(); 
                 $(".msg-reply1").delay(400).show("slide", 200);
                 $(".msg2").delay(1000).show("slide", 400); 
-            
+                scrollToBottom()
+
         //     $('.msg2')[0].scrollIntoView(false)
 
 
