@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" lang="en">
+
+        <meta property="og:site_name" content="Urgent">
+        <meta property="og:title" content="Urgent" />
+        <meta property="og:description" content="Urgent" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+
+        <title>IRC</title>
+        <script src="jquery-3.6.1.min.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <script src="helper.js?v=3"></script>
+        <link rel="stylesheet" href="cyber-grid.css?v=3">
+        <link rel="stylesheet" href="cyberpunk.css?v=3">
+        <link rel="stylesheet" href="style.css?v=3">
+        <link rel="icon" type="image/png" href="img/favicon.png" sizes="512x512">
+    </head>
+
+
+    <body class="" style="  min-height: 100vh;">
+
+
+       
+
+        <div class="container bg-white"  style="  min-height: 100vh;">
+            <div class=" text-center cyber-razor-bottom bg-dark mb-2">
+                <img style=" width:120px; height:120px;border-radius:50%;" class=" mt-4" src="img/Alliensen.svg"></img>
+                <div class="fg-yellow pb-2">@CipherViper</div>
+                <div class=" text-center cyber-razor-top bg-white"></div>
+            </div>
+            <!-- tabs -->
+            <div class="p-1" style="border: 1px solid">
+                <a class="tab m-1 inline " href="#tab1" rel="tab1">#ZeroDayZone</a>|
+                <a class="tab m-1 inline" href="#tab2" rel="tab2">#Alliansen_targets</a>|
+                <a class="tab m-1 inline" href="#tab3" rel="tab3">#Alliansen_Netrunners_Team4357</a>|
+                <a class="tab m-1 inline" href="#tab5" rel="tab4">@ByteMane <span style="font-size:0.6em;">🟢</span> </a>|
+                <a class="tab m-1 inline" href="#tab6" rel="tab5">@74B_H04RD3r <span style="font-size:0.6em;">🔴</span></a>|
+                <a class="tab m-1 inline" href="#tab7" rel="tab6">@LordxNightxPlague <span style="font-size:0.6em;">🟢</span> </a>|
+            </div>
+
+            <!-- chat -->
+
+            <div class="p-1" style=" border-top:none; min-height:100%;">
+                <!--zero day-->
+                <div class="chat" id="tab1" style="display:none;">
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[08:05]</span>
+                        <span class="from user1">@DigiByte:</span>
+                        <span class="text">Hey folks, stumbled upon a juicy ZeroDay. Anyone interested in joining the fun?</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[08:10]</span>
+                        <span class="from user2 user1">@CipherViper:</span>
+                        <span class="text">Count me in. What's the target?</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[08:15]</span>
+                        <span class="from user3">@NetVandal:</span>
+                        <span class="text">I'm intrigued. Details?</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[08:20]</span>
+                        <span class="from user1">@DigiByte:</span>
+                        <span class="text">Targeting ArcDyne's latest security patch. Exploit is ready, just need to test it.</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[10:30]</span>
+                        <span class="from user2 user1">@CipherViper:</span>
+                        <span class="text">Ran some simulations. Looks promising. When's the op?</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[11:15]</span>
+                        <span class="from user3">@NetVandal:</span>
+                        <span class="text">Yea looks sick</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[23:30]</span>
+                        <span class="from user2 user1">@CipherViper:</span>
+                        <span class="text">Hello???</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[09:00]</span>
+                        <span class="from user1">@DigiByte:</span>
+                        <span class="text">Confirmed vulnerability. Initiating the exploit at 21:00 tonight. Stay sharp, team.</span>
+                    </div>
+                </div>
+
+                <!-- Alliansen targets-->
+
+                <div class="p-1" style=" border-top:none; min-height:100%;">
+                    <div class="chat" id="tab2" style="display:none;">
+                        <div class="message pb-1">
+                            <span class="time fg-dark">[14:43]</span>
+                            <span class="from user4">[System: Alliansen]:</span>
+                            <span class="text">10021992 New contract alert. Seek and destroy. MAXtac needs team of netrunners to track down group marked group, suspected location: MCR_Trafford. </span>
+                        </div>
+                        <div class="message pb-1">
+                            <span class="time fg-dark">[17:43]</span>
+                            <span class="from user1">@DigiByte:</span>
+                            <span class="text">@system --clam_contract 10021992</span>
+                        </div>
+                        <div class="message pb-1">
+                            <span class="time fg-dark">[17:43]</span>
+                            <span class="from user3">@BlackHat:</span>
+                            <span class="text">@system --claim_contract 10021992</span>
+                        </div>
+                        <div class="message pb-1">
+                            <span class="time fg-dark">[17:44]</span>
+                            <span class="from user4">[System: Alliansen]:</span>
+                            <span class="text">contract claimed by  <span class="from user3">@BlackHat</span> </span>
+                        </div>
+                        <div class="message pb-1">
+                            <span class="time fg-dark">[17.45]</span>
+                            <span class="from user3">@DigiByte:</span>
+                            <span class="text">shit</span>
+                        </div>
+                        <div class="message pb-1">
+                            <span class="time fg-dark">[17:44]</span>
+                            <span class="from user4">[System: Alliansen]:</span>
+                            <span class="text">Target list sent</span>
+                        </div>
+                        <div class="message pb-1">
+                            <span class="time fg-dark">[09:15]</span>
+                            <span class="from user1">@DigiByte:</span>
+                            <span class="text">Targets posted: 1. [System] updated the hit list. Check your feeds.</span>
+                        </div>                       
+                    </div>
+                </div>
+                <!--end-->
+
+                <!-- team-->
+                
+                <div class="chat" id="tab3" style="display:none;">
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:01]</span>
+                        <span class="from user4">@BlackHat:</span>
+                        <span class="text">Got a observe&surveil gig, supporting MAXtac termination. decrypting deetz</span>
+                    </div>
+                    
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:01]</span>
+                        <span class="from user3">@BlackHat:</span>
+                        <span class="text">
+                            <div class="code-block">
+                                {
+                                    "Targets": [
+                                      "Nikita(Heidi)",
+                                      "Nik",
+                                      "Ruth",
+                                      "Dan x2",
+                                      "Chris",
+                                      "Tasha",
+                                      "Nadia",
+                                      "Karolis",
+                                      "Jack",
+                                      "Pikey",
+                                      "Courtney",
+                                      "Phil",
+                                      "Jethro",
+                                      "Cara",
+                                      "Andy",
+                                      "Marius",
+                                      "Maciej"
+                                    ]
+                                  }
+                            </div>
+    
+                        </span>
+                    </div>
+                    
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:05]</span>
+                        <span class="from user2">@Psyber:</span>
+                        <span class="text">whats the pay ¤¤¤¤? </span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:01]</span>
+                        <span class="from user4">@BlackHat:</span>
+                        <span class="text">Good, dont worry</span>
+                    </div>
+                    
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:08]</span>
+                        <span class="from user5">@Z3ro_c00l:</span>
+                        <span class="text">Copy that. I'll start setting up surveillance nodes in the area.</span>
+                    </div>
+                    
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:10]</span>
+                        <span class="from user1 user1">@CipherViper:</span>
+                        <span class="text">sweet, i have already put a peng deamon on their devices</span>
+                    </div>
+                    
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:12]</span>
+                        <span class="from user4">@BlackHat:</span>
+                        <span class="text">make sure to keep our backdoor into the local security grid updated. Things can go south. Smth fishy about the job but pay is too good. Stay on your guards</span>
+                    </div>
+                    
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:15]</span>
+                        <span class="from user3">@ShadowByte:</span>
+                        <span class="text">Already on it. Backdoor is secure and undetectable.</span>
+                    </div>
+                    
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:18]</span>
+                        <span class="from user2">@Psyber:</span>
+                        <span class="text">I'll be on standby in case we need any digital distractions to cover our tracks.</span>
+                    </div>
+                    
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:20]</span>
+                        <span class="from user5">@Z3ro_c00l:</span>
+                        <span class="text">Sounds good. I'll keep you updated on any unusual activity from the target group.</span>
+                    </div>
+                    
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:23]</span>
+                        <span class="from user1 user1">@CipherViper:</span>
+                        <span class="text">Be careful out there. THE NET is deadly if you're not prepared.</span>
+                    </div>
+                    
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:26]</span>
+                        <span class="from user4">@BlackHat:</span>
+                        <span class="text">Don't worry, <span class="from user1 user1">@CipherViper:</span> we're the best in the biz. We'll get the job done.</span>
+                    </div>
+                    
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:29]</span>
+                        <span class="from user3">@ShadowByte:</span>
+                        <span class="text">That's right. We're not just netrunners, we're shadow warriors.</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:29]</span>
+                        <span class="from user1 user1">@CipherViper:</span>
+                        <span class="text">Thats bit cringe @Shadow.</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:30]</span>
+                        <span class="from user1 user1">@CipherViper:</span>
+                        <span class="text">@BlackHat: thats not what they say about you in the head office lmaoz. Hope this goes smoothly and i can get promoted to B type team.</span>
+                    </div>
+
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:30]</span>
+                        <span class="from user4">@BlackHat:</span>
+                        <span class="text">Don't we all. We gotta work with what we got, and gonks here is all we got. This should be easy job, lets smash it. If all goes well I will buy you a holo stripper @CipherViper: and who knows maybe this is a big redemption arc and you will be able to go back to head office</span>
+                    </div>
+
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:30]</span>
+                        <span class="from user2">@Psyber:</span>
+                        <span class="text">Adrian.Steele@workstation11:-$ sudo replace-metadata --tag xXx_P0RN0_HOT_xXx_MAX_FEEL_BD&xxx_xXx_3SOME_FUCK-BD --entry <a href="https://www.nightcity.love/en/">"https://www.nightcity.love/en/"</a>
+                        </span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:30]</span>
+                        <span class="from user2">@Psyber:</span>
+                        <span class="text">Shit, wrong terminal</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:31]</span>
+                        <span class="from user2">@Psyber:</span>
+                        <span class="text"> Adrian.Steele@workstation11:-$ sudo delete_message --message <message_id: -2> --chat <#Alliansen_Netrunners> --confirm --force --override-security --verbose --interactive --deep-scan --encryption-key=7Xp#d9F!2mPq --timezone=UTC+3  --timeout=600s--skip-confirmation-dialog --backup-delete --recovery-mode=advanced --ignore-dependencies --experimental-feature=delete --delete-really-hard 
+                        </span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:32]</span>
+                        <span class="from user4">@BlackHat:</span>
+                        <span class="text">...</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:32]</span>
+                        <span class="from user4">@BlackHat:</span>
+                        <span class="text">On work machine? really?</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:31]</span>
+                        <span class="from user2">@Psyber:</span>
+                        <span class="text">ughhh how do i delete a message?
+                        </span>
+                    </div>
+
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:32]</span>
+                        <span class="from user4">@BlackHat:</span>
+                        <span class="text">fucks sake <span class="from user2">@Psyber</span>you cant it goes straight to data fort, only big boss man got access</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:32]</span>
+                        <span class="from user4">@BlackHat:</span>
+                        <span class="text">Anyway... its execution time</span>
+                    </div>
+                    
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:35]</span>
+                        <span class="from user5">@Z3ro_c00l:</span>
+                        <span class="text">Piece of cake, or should I say, a byte of cake. This will be easier than hacking into a public Wi-Fi hotspot. They wont know what hit them</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:38]</span>
+                        <span class="from user1 user1">@CipherViper:</span>
+                        <span class="text">LMAOZ</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[18:38]</span>
+                        <span class="from user1 user1">@CipherViper:</span>
+                        <span class="text">Copy that. I am jacking in and will be poppin off, see ya on the other side.</span>
+                    </div>
+                    
+                    
+                </div>
+                <!-- byte queen-->
+                <div class="chat" id="tab4" style="display:none;">
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[00:36]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">came across <a target="_blank" rel="noopener noreferrer" href="Tunes.html">this</a> is it one of yours? :P</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[02:45]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">big fan of your work. Can I pick your brain sometime?</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[03:10]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">I bet you got a beautiful smile</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[04:12]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">I really admire your skills. Please, just give me a chance.</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[09:46]</span>
+                        <span class="from user2">@ByteMane:</span>
+                        <span class="text">Who are you? and how did you get my chat key?</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[09:46]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">Just a fellow netrunner looking to learn from the best and maybe bit more :P</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[10:03]</span>
+                        <span class="from user2">@ByteMane:</span>
+                        <span class="text">Well, I'm not interested in teaching. Figure it out on your own.</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[10:03]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">What about something more? you know we could check out each others ports, not just net running ones.</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[10:27]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">Sorry didn't mean to sound like that. I donated 1k¤ to you on your last live NETstream</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[10:41]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">Please, I'll do anything to touch you.</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[11:54]</span>
+                        <span class="from user2">@ByteMane:</span>
+                        <span class="text">Only reason I haven't ICEd you is because your messages are so awful that I can't wait to get more and share them on my next Ns</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[11:55]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">You fucking ungreateful cow I will ruin you.</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[13.02]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">I was testing you to recruit to elite hacking core! You skank. I have PWNed you with my hacking skills, rot in a hole loser. LOVE THE CIPHER OR BOW TO THE VIPER</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[13.04]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⠿⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣷⣶⣿⣿⣿⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣿⣿⠏⣿⢃⣿⣿⡏⢿⣿⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⡿⠃⠀⢳⣿⣿⣿⡇⠀⠹⣿⣿⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⠟⠁⠀⠀⢸⣿⣿⣿⡇⠀⠀⠘⢿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⠋⠀⠀⠀⠀⢸⣿⣿⣿⡇⠀⠀⠀⠈⠻⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⠃⠀⣀⣤⣼⣿⣿⣿⣿⣿⣧⣀⠀⠀⠀⠀⠻⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⡟⠁⣴⣾⡿⠶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣄⡀⠀⠙⣿⣿⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣿⣿⠟⠀⠀⠈⠉⠇⢀⢸⣿⢹⡏⣿⠿⠉⠻⣿⣿⣿⣿⣄⠀⠈⢿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⢠⣾⣿⡿⠋⠀⠀⠀⠀⠀⠀⠛⠻⠿⢿⣿⠿⡿⠿⠿⠟⠻⣿⣿⣿⡆⠀⠀⠹⣿⣿⣧⡀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⣴⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣼⣿⣿⣿⣤⣄⣀⠀⣻⣿⣿⡏⠀⠀⠀⠘⢿⣿⣷⣄⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⢀⣾⣿⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠈⠻⣿⣿⣦⠀⠀⠀⠀
+                            ⠀⠀⠀⣰⣿⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣏⣽⣿⡇⠀⣇⣈⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣷⡄⠀⠀
+                            ⠀⢀⣼⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⣷⣾⣿⠿⠛⠋⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠈⢻⣿⣿⣦⠀
+                            ⢠⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣿⣿⣿⡿⠀⠀⠀⡀⠀⠀⠀⠀⠀⢻⣿⣿⣷
+                            ⠀⠙⢿⣿⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⡏⠉⠀⣿⣿⡏⠉⡟⠿⣿⣿⣿⣿⣿⣧⠀⠀⠐⣷⠀⠀⠀⠀⣰⣿⣿⡟⠁
+                            ⠀⠀⠈⢻⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠈⣻⣿⣿⣿⣷⣶⣿⣿⣧⣶⣷⣾⣿⣿⣿⣿⣿⣿⣇⠀⢸⣿⡇⠀⢀⣾⣿⣿⠏⠀⠀
+                            ⠀⠀⠀⠀⠙⣿⣿⣷⡀⠀⠀⠀⣠⣴⣿⣿⣿⣿⡿⠿⢿⣿⣿⡿⠿⣿⣿⣯⣭⣿⣿⣿⣿⣿⠀⣼⣿⠁⣠⣿⣿⡿⠁⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠈⢿⣿⣿⣄⠀⢰⣿⣿⣿⣿⣿⠁⠀⠀⢸⣿⣿⠆⠀⡇⠈⣹⣿⣿⣿⣿⣿⣧⣾⣿⠏⣴⣿⣿⠟⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠻⣿⣿⣦⠈⢿⣿⣿⣿⣿⣷⣶⣤⣿⣿⣿⣤⣴⣷⣿⣿⣿⣿⣿⣿⠿⠟⠛⢡⣾⣿⡿⠋⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⣷⡌⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⣰⣿⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢻⣿⣿⣆⠀⠈⠙⠛⠛⠿⠻⢿⣿⠛⢻⡏⠉⠉⠀⠀⠀⠀⢀⣼⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⣿⠀⢸⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣷⡀⠀⠀⠀⠀⠀⢹⡀⡼⠀⠀⠀⠀⠀⣠⣿⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⣆⠀⠀⠀⠀⢸⣦⠇⠀⠀⠀⢀⣼⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⣿⣿⣧⡀⠀⠀⢸⡿⠀⠀⠀⢠⣾⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⣷⣄⠀⠀⠀⠀⠀⣰⣿⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢻⣿⣿⣦⠀⠀⢀⣾⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣷⣠⣿⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⠟⠀⠐⢲⠒⣶⣰⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⠋⠀⠀⠀⠘⠋⠋⠋⠓⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+                    </div>
+                </div>
+                <!-- tabs-->
+                <div class="chat" id="tab5" style="display:none;">
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:11]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">Hey are you still working in the head office? I need to call in a favour</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:22]</span>
+                        <span class="from user2">@74B_H04RD3r:</span>
+                        <span class="text">howdy i do. grim to hear you being demoted from main office. How is your new team? freelance netrunning soudns exciting.</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:32]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">its shit man. half of these people couldnt spell their name in binary.</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:38]</span>
+                        <span class="from user2">@74B_H04RD3r:</span>
+                        <span class="text">lmaoz. that bad?</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[15:39]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">I am jacking into 2nd gen neurolinks? It is like putting a **** in a blender.</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[15:40]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">...cant even curse anymore.</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:53]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">Listen You owe me one for that stuff in BORGHOLO, do you still have access to the copmany portal?</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:55]</span>
+                        <span class="from user2">@74B_H04RD3r:</span>
+                        <span class="text">yea... but I do not where this is going</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:54]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">I met this girl, goes by Bytemane, her encryption key is 513451234, met her other day, she went into cyber rage halfway through the doing thing... you know, can't blame her we been going for like 5hours... she almost killed me, ripped a hole in my apartament, killed 4 children, 2 orphans, handfull of elderly and raped my cat.</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:55]</span>
+                        <span class="from user2">@74B_H04RD3r:</span>
+                        <span class="text">Really?  find it hard to believe</span>
+                    </div>
+
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:57]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">yeah 10000% legit. She hacked into the network too using my creds and gonna publish a smear campaign on Alliansen. Can you put her on the high priority execution? If not she will publish and we all gonna sink... on top of that i will release that video from BORGHALO i ber your wife will love it.</span>
+                    </div>
+
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[13:01]</span>
+                        <span class="from user2">@74B_H04RD3r:</span>
+                        <span class="text">Done. she is on the list, Alliensen is already working on capture. Delete BORGHOLO video please.</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[13.02]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">you are legend! sorted </span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[15:43]</span>
+                        <span class="from user2">@74B_H04RD3r:</span>
+                        <span class="text">we are even, i hope you really deleted it and past is going to stay in the past... Maybe he wasn't so wrong to fire you after all.</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[15:43]</span>
+                        <span class="from user2">@74B_H04RD3r:</span>
+                        <span class="text">Speaking of firings, the dude who fired you is absolute byte. Learned that he's cousin of head middle manager or some shit like that, he is now branch adviser with access to data fort and this is kind of emails he sends to us.... fml wish you were here so i could offload it onto you.</span>
+                    </div>
+                     <div class="message pb-1">
+                        <span class="time fg-dark">[15:44]</span>
+                        <span class="from user2">@74B_H04RD3r:</span>
+                        <span class="text">I swear it must a walking ~$ROOTvirus wearing that man like an exoskeleton. <a href="Email.html" target="_blank" rel="noopener noreferrer">FRW:Urgent!!!!!!!!!!!!!!! Workstation Change Request, Password Policy Feedback and faulty machinery</a></span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[15:45]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">is that real?!</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[15:47]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">isnt 69 like some ancient joke?</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[16:10]</span>
+                        <span class="from user2">@74B_H04RD3r:</span>
+                        <span class="text">Yeah he complained to upper middle management about the workstation number after we didnt do it... got my balls twisted as he raved smth about it being the "NICE" number. so yeah now that gonk is on WS69</span>
+                    </div>
+                                        <div class="message pb-1">
+                        <span class="time fg-dark">[16:14]</span>
+                        <span class="from user2">@74B_H04RD3r:</span>
+                        <span class="text">its stupid. Really wanted to reply with just "NO" to his email</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[16:21]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">hahaha should have</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[16:24]</span>
+                        <span class="from user2">@74B_H04RD3r:</span>
+                        <span class="text">and joined you in freelancing? thanks but no thanks.</span>
+                    </div>
+                </div>
+                 <!-- LordxNightxPlague: chat-->
+                 <div class="chat" id="tab6" style="display:none;">
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:01]</span>
+                        <span class="from user3 user3">@LordxNightxPlague:</span>
+                        <span class="text">ねえ  <span class="from user1">@CipherViper</span></span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:02]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">こんにちは</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:03]</span>
+                        <span class="from user3">@LordxNightxPlague:</span>
+                        <span class="text">今夜Team4357で私をカバーしてもらえますか</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:04]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">あなたは今私をヤンキンしている</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:05]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">すでに48時間ジャッキインされています</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:06]</span>
+                        <span class="from user3">@LordxNightxPlague:</span>
+                        <span class="text">いいかい、いいかい、俺に正当な理由がなかったら聞かないってことは知ってるだろ</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:07]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">それで、それは何ですか?</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:08]</span>
+                        <span class="from user3">@LordxNightxPlague:</span>
+                        <span class="text">今夜のブラックアウトゲームのチケットを2枚手に入れました</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:09]</span>
+                        <span class="from user3">@LordxNightxPlague:</span>
+                        <span class="text">あなたは私の子供がemに夢中になっていることを知っています</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:10]</span>
+                        <span class="from user3">@LordxNightxPlague:</span>
+                        <span class="text">これは、私たちが押し込める唯一のゲームでした、本当に急な通知でした</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:11]</span>
+                        <span class="from user3">@LordxNightxPlague:</span>
+                        <span class="text">よし。。。でも、仕事中にキールを打たないように、刺激を投げてください</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:12]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">hmmm</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:13]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">よし。。。でも、仕事中にキールを打たないように、刺激を投げてください</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:14]</span>
+                        <span class="from user3">@LordxNightxPlague:</span>
+                        <span class="text">私の男をビクター!おかげで、あなたは最高です!</span>
+                    </div>
+                    <div class="message pb-1">
+                        <span class="time fg-dark">[12:15]</span>
+                        <span class="from user1">@CipherViper:</span>
+                        <span class="text">ええええ、問題ありません。そして、あなたと子供の静止画をスナップすることを忘れないでください、ミスター・ダッド・オブ・ザ・イヤー</span>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <!-- end -->
+            
+
+        
+    
+        </div>
+        <div style=" border: 1px solid;width:100%; overflow:hidden;  background: rgba(0,0,0,0.2); opacity:0.7; " class="text-center pt-2 pb-2">
+            <div style="opacity:0.7;" class="">
+                <div class="block">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#800080"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><g><path d="M20,5V4c0-0.55-0.45-1-1-1h-2c-0.55,0-1,0.45-1,1v1h-1v4c0,0.55,0.45,1,1,1h1v7c0,1.1-0.9,2-2,2s-2-0.9-2-2V7 c0-2.21-1.79-4-4-4S5,4.79,5,7v7H4c-0.55,0-1,0.45-1,1v4h1v1c0,0.55,0.45,1,1,1h2c0.55,0,1-0.45,1-1v-1h1v-4c0-0.55-0.45-1-1-1H7 V7c0-1.1,0.9-2,2-2s2,0.9,2,2v10c0,2.21,1.79,4,4,4s4-1.79,4-4v-7h1c0.55,0,1-0.45,1-1V5H20z"/></g></g></svg>
+                </div>
+                <div class="fg-purple">ERROR: Communication disabled. Neural interface required</div>
+            </div>
+        </div>
+  </div>
+<!-- region end-->
+
+
+
+
+
+
+    </body>
+    <script>
+$('.tab').click(function(){
+    $(".chat").hide(); 
+    $(".tab").removeClass('fg-cyan bg-dark');
+    $(this).addClass('fg-cyan bg-dark')
+    var id = $(this).attr("rel");
+
+    $('#'+id).delay(200).show("slide",{ direction: "up" }, 200);
+});
+       
+    </script>
+</html>

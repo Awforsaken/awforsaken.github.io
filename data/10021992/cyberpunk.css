@@ -652,7 +652,37 @@ body
 
 /*#endregion*/
 
+.message
+{
+    font-family: 'IBMPlexMono', monospace!important;
+    font-size: 0.9em;  
+    font-weight: normal;
+} 
+.message.system {
+    text-shadow: 0 0 4px var(--red);
+}
+.message.time
+{
+    opacity:0.7;
+}
+.from.user1{
+    color:var(--purple);
+}
+.from.user2{
+    color:var(--blue);
+}
+.from.user3{
+    color:var(--green);
+}
+.from.user4, .from.admin{
+    color:var(--red);
+}
+.message .text 
+{
+    font-family: Oxanium !important
+}
 /*#region code*/
+
 .code,
 code,
 .code-block
