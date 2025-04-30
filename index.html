@@ -17,7 +17,63 @@
 </head>
 
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <style>
+
+.new-content.flex-container {
+    pointer-events: auto;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding:1rem;
+  margin:auto;
+  max-width:400px;
+}
+.new-content{
+    font-family:monospace;
+    font-weight:medium; 
+}
+.new-content h1, .new-content p {
+    text-align: center;
+    margin:24px;
+}
+
+.new-content a.box {
+  flex: 1;
+  padding: 1rem;
+  background: #eee;
+  border: 1px solid #ccc;
+  color:#000;
+}
+.new-content a.box:hover {
+  background:#f5f5f5;
+  color:#333;
+}
+
+/* Stack vertically on screens narrower than 768px */
+@media (min-width: 1040px) {
+  .new-content.flex-container {
+    flex-direction: row;
+    max-width:1200px;
+  }
+
+}
+</style>
+<div class="new-content">
+    <div class="portfolio-logo"></div>
+<div class="flex-container new-content">
+  <a href="http://danielius.vercel.app" class="box">full website / blog 
+    </a>
+  <a href="https://awforsaken.github.io/fukuzatsu/" class="box">fukuzatsu calculator</a>
+  <a href="https://awforsaken.github.io/Bins/" class="box">bury council bin collection tracker</a>
+</div>
+<p>dan/awfor</p>
+
+</div>
+</body>
+
+<body >
+    <div style="display:none;" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
             <div class="mdl-layout__header-row portfolio-logo-row">
                 <span class="mdl-layout__title">
